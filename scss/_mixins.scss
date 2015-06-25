@@ -32,18 +32,16 @@
     transition: all $value linear;
 }
 
-@mixin button($color, $margin) {
+@mixin button($bg-color, $color, $margin) {
     font-size: 0.95em;
-    font-family: $opensans;
-    display: block;
     font-weight: 600;
     z-index: 2;
     text-decoration: none;
     text-align: center;
+    display: inline-block;
     
     color: $color;
-    border: solid 2px $color;
-    background-color: transparent;
+    background-color: $bg-color;
     
     position: relative;
     overflow: hidden;
@@ -57,7 +55,7 @@
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
     
-    &:after {
+    /*&:after {
         content: '';
         position: absolute;
         z-index: -1;
@@ -76,7 +74,7 @@
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         transition: all 0.3s;
-    }
+    }*/
     &:hover {
         color: $white;
     }

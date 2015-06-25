@@ -1,0 +1,5 @@
+// Buttons and Inputs
+
+.btn {
+    @include button($dark, $spot, 0px);
+}
