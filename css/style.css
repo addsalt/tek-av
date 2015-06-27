@@ -850,24 +850,24 @@ table, td {
 
 table {
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
-td {
+.two-split td {
   display: block;
   width: 100%;
   vertical-align: top;
 }
 
 @media only screen and (min-width: 38em) {
-  td {
+  .two-split td {
     display: table-cell;
   }
-  td.left {
+  .two-split td.left {
     width: 45%;
     text-align: right;
   }
-  td.right {
+  .two-split td.right {
     width: 55%;
     text-align: left;
     padding-left: 2rem;
@@ -949,6 +949,10 @@ td {
   #testimonials .slide p {
     padding: 0 30%;
   }
+}
+
+.logos ul li {
+  display: inline-block;
 }
 
 .hide-text {
@@ -1364,4 +1368,8 @@ a {
 #our-work {
   text-align: center;
   margin-top: 1rem;
+}
+
+footer {
+  text-align: center;
 }
