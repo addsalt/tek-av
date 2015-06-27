@@ -360,3 +360,13 @@ table {
     display: inline-block;
 }
 
+// Form
+
+.md-content section {
+    height: auto;
+    min-height: 1px;
+    
+    @media #{$media-m} { 
+        min-height: 1px;
+    }
+}

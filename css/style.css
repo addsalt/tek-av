@@ -955,6 +955,17 @@ table {
   display: inline-block;
 }
 
+.md-content section {
+  height: auto;
+  min-height: 1px;
+}
+
+@media only screen and (min-width: 38em) {
+  .md-content section {
+    min-height: 1px;
+  }
+}
+
 .hide-text {
   text-indent: 100%;
   white-space: nowrap;
@@ -1381,8 +1392,8 @@ perspective effects (not including the modals and the overlay).
 
 /* Content styles */
 .md-content {
-  color: #fff;
-  background: #e74c3c;
+  color: #303030;
+  background: #fff;
   position: relative;
   border-radius: 3px;
   margin: 0 auto;
@@ -1441,15 +1452,163 @@ perspective effects (not including the modals and the overlay).
   opacity: 1;
 }
 
+button, input {
+  line-height: normal;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+.input {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin: 1em;
+  max-width: 350px;
+  width: -webkit-calc(100% - 2em);
+  width: calc(100% - 2em);
+  vertical-align: top;
+}
+
+.input__field {
+  position: relative;
+  display: block;
+  float: right;
+  padding: 0.8em;
+  width: 60%;
+  border: none;
+  border-radius: 0;
+  background: #95a5a6;
+  color: #ecf0f1;
+  -webkit-appearance: none;
+  /* for box shadows to show on iOS */
+}
+
+.input__field:focus {
+  outline: none;
+}
+
+.input__label {
+  display: inline-block;
+  float: right;
+  padding: 0 1em;
+  width: 40%;
+  color: #95a5a6;
+  font-weight: bold;
+  font-size: 70.25%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.input__label-content {
+  position: relative;
+  display: block;
+  padding: 1.6em 0;
+  width: 100%;
+}
+
+/* Yoshiko */
+.input__field--yoshiko {
+  width: 100%;
+  background-color: #ecf0f1;
+  border: 2px solid transparent;
+  -webkit-transition: background-color 0.25s, border-color 0.25s;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+
+.input__label--yoshiko {
+  width: 100%;
+  text-align: left;
+  position: absolute;
+  bottom: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  padding: 0 1.25em;
+  -webkit-transform: translate3d(0, 3em, 0);
+  transform: translate3d(0, 3em, 0);
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+.input__label-content--yoshiko {
+  color: #95a5a6;
+  padding: 0.25em 0;
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+.input__label-content--yoshiko::after {
+  content: attr(data-content);
+  position: absolute;
+  font-weight: 800;
+  bottom: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: #303030;
+  padding: 0.25em 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85em;
+}
+
+.input__field--yoshiko:focus + .input__label--yoshiko,
+.input--filled .input__label--yoshiko {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.input__field--yoshiko:focus + .input__label--yoshiko .input__label-content--yoshiko,
+.input--filled .input__label-content--yoshiko {
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+.input__field--yoshiko:focus + .input__field--yoshiko,
+.input--filled .input__field--yoshiko {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
 #intro {
   background: #ecf0f1;
   padding: 2%;
   padding-top: 50px;
 }
 
+@media only screen and (min-width: 38em) {
+  #intro {
+    padding: -webkit-calc(50px + 5%) 35% 5% 15%;
+    padding: calc(50px + 5%) 35% 5% 15%;
+  }
+}
+
 #about-intro aside.media {
   background-image: url(http://www.placehold.it/700x700/c1c1c1);
   background-size: cover;
+}
+
+#about-us {
+  padding: 2%;
+}
+
+@media only screen and (min-width: 38em) {
+  #about-us {
+    padding: 5% 15%;
+  }
 }
 
 #i-1, #i-2, #i-3 {
@@ -1473,6 +1632,10 @@ perspective effects (not including the modals and the overlay).
   padding-top: 1.5rem;
 }
 
+.two-split, .logos {
+  margin-top: 6rem;
+}
+
 #our-work {
   text-align: center;
   margin-top: 1rem;
@@ -1480,4 +1643,13 @@ perspective effects (not including the modals and the overlay).
 
 footer {
   text-align: center;
+  padding: 6%;
+}
+
+@media only screen and (min-width: 60em) {
+  .two-split td.left {
+    width: 45%;
+    text-align: right;
+    padding-left: 10rem;
+  }
 }
