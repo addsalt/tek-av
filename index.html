@@ -26,7 +26,7 @@
     
     <div id="intro">
         <h1>Tek-AV:</br>Audio and Video installations done right</h1>
-        <p>Custom, local solutions done with a smile.</p>
+        <p>Custom, local solutions with a smile.</p>
         <a class="btn" href="#">Learn more</a>
     </div>
     
@@ -49,19 +49,53 @@
         <div id="i-1" class="carousel-item item-1">
             <section id="slider-intro">
                 <aside class="media">
-                    
+                    <!-- Slider Elements Start -->
+                    <div class="slider" id="slider">
+                        <div class="holder">
+                            <div class="slide" id="slide-0"></div>
+                            <div class="slide" id="slide-1"></div>
+                            <div class="slide" id="slide-2"></div>
+                        </div>
+                    </div>
+                    <nav class="slider-nav" id="slider-nav">
+                        <a href="#slide-0">Slide 0</a> 
+                        <a href="#slide-1">Slide 1</a> 
+                        <a href="#slide-2">Slide 2</a> 
+                    </nav>
+                    <!-- Slider Elements End -->
                 </aside>
                 <aside class="content">
                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.</p>
                 </aside>
             </section>
+            
             <a class="arrow arrow-prev" href="#target-item-3"></a>
             <a class="arrow arrow-next" href="#target-item-2"></a>
         </div>
         
         <div id="i-2" class="carousel-item item-2 light" style="background-color: royalblue;">
-            <h2>Item 2</h2>
-            <p>Content goes here.</p>
+            <section id="slider-intro" class="flip-layout">
+                <aside class="media">
+                    <!-- Slider Elements Start -->
+                    <div class="slider" id="slider">
+                        <div class="holder">
+                            <div class="slide" id="slide-0"></div>
+                            <div class="slide" id="slide-1"></div>
+                            <div class="slide" id="slide-2"></div>
+                        </div>
+                    </div>
+                    <nav class="slider-nav" id="slider-nav">
+                        <a href="#slide-0">Slide 0</a> 
+                        <a href="#slide-1">Slide 1</a> 
+                        <a href="#slide-2">Slide 2</a> 
+                    </nav>
+                    <!-- Slider Elements End -->
+                </aside>
+                <aside class="content">
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </aside>
+            </section>
+            
             <a class="arrow arrow-prev" href="#target-item-1"></a>
             <a class="arrow arrow-next" href="#target-item-3"></a>
         </div>
@@ -70,13 +104,22 @@
             <h2>Item 3</h2>
             <p>Content goes here.</p>
             <a class="arrow arrow-prev" href="#target-item-2"></a>
-        <a class="arrow arrow-next" href="#target-item-1"></a>
+            <a class="arrow arrow-next" href="#target-item-1"></a>
         </div>
     </div>
     
     <footer>
     </footer>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/nav.js"></script>
+    <script>
+        $(function(){
+        $('#slider-nav a').click(function () {
+            $('#slider-nav a').css('background-color', 'transparent');
+         $(this).css('background-color', 'orange');
+         });
+     });
+    </script>
 </body>
 </html>

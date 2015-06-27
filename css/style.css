@@ -487,7 +487,7 @@
   left: 0;
   height: 35px;
   width: 35px;
-  background: #3498db url("../images/nav.png") no-repeat center center;
+  background: #ffffff url("../images/nav.png") no-repeat center center;
   background-size: 16px;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
@@ -562,10 +562,10 @@ html {
 
 body {
   background-color: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   font-weight: 400;
   line-height: 1.45;
-  color: #333;
+  color: #303030;
 }
 
 p {
@@ -598,6 +598,10 @@ h4, .cuatro {
 
 small, .font_small {
   font-size: 0.707em;
+}
+
+a {
+  color: #303030;
 }
 
 @-moz-viewport {
@@ -753,7 +757,7 @@ section aside.content {
   width: 100%;
   position: relative;
   box-sizing: border-box;
-  color: #fff;
+  padding: 6%;
 }
 
 @media only screen and (min-width: 38em) {
@@ -765,13 +769,25 @@ section aside.content {
   }
 }
 
+@media only screen and (min-width: 38em) {
+  section.flip-layout aside.media {
+    left: 50%;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+  section.flip-layout aside.content {
+    right: 50%;
+    top: 0;
+    bottom: 0;
+  }
+}
+
 #intro {
   background: #ecf0f1;
   padding: 2%;
-}
-
-#about-intro aside.content {
-  background-color: aquamarine;
 }
 
 #slider-intro aside.content {
@@ -795,7 +811,7 @@ section aside.content {
   text-decoration: none;
   text-align: center;
   display: inline-block;
-  color: #3498db;
+  color: #ffffff;
   background-color: #303030;
   position: relative;
   overflow: hidden;
@@ -867,8 +883,8 @@ section aside.content {
   width: 50px;
   height: 50px;
   -webkit-tap-highlight-color: transparent;
-  background-color: aqua;
-  /*background: url(http://placehold.it/40x40) 50% 50% / 20px no-repeat;*/
+  background-color: transparent;
+  background: url(../../images/slider-arrow.png) 50% 50%/20px no-repeat;
 }
 
 .arrow-prev {
@@ -915,4 +931,68 @@ section aside.content {
 
 #i-1 {
   background-color: #ecf0f1;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.holder {
+  width: 300%;
+  height: 100%;
+}
+
+.slide {
+  float: left;
+  width: 33.333333%;
+  height: 100%;
+}
+
+.slider-nav {
+  text-align: center;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  display: block;
+  z-index: 7;
+}
+
+.slider-nav a {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border: solid 1px white;
+  overflow: hidden;
+  text-indent: -9999px;
+  border-radius: 50%;
+}
+
+.slider-nav a.active {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.slide {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+#slide-0 {
+  background-image: url(../../images/placeholder1.jpg);
+}
+
+#slide-1 {
+  background-image: url(../../images/placeholder2.jpg);
+}
+
+#slide-2 {
+  background-image: url(../../images/placeholder3.jpg);
 }

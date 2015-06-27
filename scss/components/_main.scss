@@ -121,7 +121,7 @@ section aside.content {
     width: 100%;
     position: relative;
     box-sizing: border-box;
-    color: $white;
+    padding: 6%;
     
     @media #{$media-m} { 
         width: 50%;
@@ -131,13 +131,25 @@ section aside.content {
     }
 }
 
+section.flip-layout aside.media {
+    @media #{$media-m} { 
+        left: 50%;
+        top: 0;
+        bottom: 0;
+    }    
+}
+
+section.flip-layout aside.content {
+    @media #{$media-m} { 
+        right: 50%;
+        top: 0;
+        bottom: 0;
+    }    
+}
+
 #intro {
     background: $lightgrey;
     padding: 2%
-}
-
-#about-intro aside.content {
-    background-color: aquamarine;
 }
 
 #slider-intro aside.content {
