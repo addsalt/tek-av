@@ -295,10 +295,11 @@ table {
 }
 
 .flipper {
-	transition: 0.6s;
+    -webkit-transition: transform 800ms cubic-bezier(.33,.28,.18,.99);
+	transition: transform 800ms cubic-bezier(.33,.28,.18,.99);
+    transform: rotateY(0deg);
 	transform-style: preserve-3d;
     cursor: pointer;
-
 	position: relative;
 }
 

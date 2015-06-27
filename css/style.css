@@ -885,8 +885,10 @@ table {
 }
 
 .flipper {
-  -webkit-transition: 0.6s;
-          transition: 0.6s;
+  -webkit-transition: -webkit-transform 800ms cubic-bezier(0.33, 0.28, 0.18, 0.99);
+  transition: transform 800ms cubic-bezier(0.33, 0.28, 0.18, 0.99);
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   cursor: pointer;
