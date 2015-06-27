@@ -3,3 +3,7 @@
 .btn {
     @include button($dark, $spot, 0px);
 }
+
+.quote-btn {
+    @include button($dark, $spot, 15px 0 0);
+}

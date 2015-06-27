@@ -21,16 +21,26 @@ h1, h2, h3, h4 {
 
 h1, .uno {
   margin-top: 0;
-  font-size: 3.998em;
+  font-size: 2.827em;;
 }
 
-h2, .dos {font-size: 2.827em;}
+h2, .dos {font-size: 1.999em;}
 
 h3, .tres {font-size: 1.999em;}
 
 h4, .cuatro {font-size: 1.414em;}
 
 small, .font_small {font-size: 0.707em;}
+
+@media #{$media-m} { 
+    h1, .uno {
+      margin-top: 0;
+      font-size: 3.998em;
+    }
+
+    h2, .dos {font-size: 2.827em;}
+
+}
 
 a {
     color: $dark;
