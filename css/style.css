@@ -638,6 +638,11 @@ section aside.content {
   }
 }
 
+.section aside.content div {
+  display: block;
+  position: relative;
+}
+
 @media only screen and (min-width: 38em) {
   section.flip-layout aside.media {
     left: 50%;
@@ -781,6 +786,63 @@ section aside.content {
   background-repeat: no-repeat;
 }
 
+.wide-holder {
+  background-color: #303030;
+  color: #fff;
+  padding: 2%;
+}
+
+@media only screen and (min-width: 38em) {
+  .wide-holder {
+    padding: 10%;
+  }
+}
+
+.three-col div {
+  background-color: #ecf0f1;
+  color: #303030;
+  padding: 2%;
+  margin-bottom: 1rem;
+}
+
+.three-col div img {
+  max-width: 200px;
+  margin: 2rem auto 0;
+}
+
+@media only screen and (min-width: 38em) {
+  .three-col {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .three-col div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0;
+  }
+  .three-col div:nth-child(2) {
+    margin: 0 2em;
+  }
+}
+
 .hide-text {
   text-indent: 100%;
   white-space: nowrap;
@@ -823,6 +885,19 @@ a.tel {
   right: 40px;
 }
 
+a.cta-btn-m {
+  display: none;
+}
+
+@media only screen and (min-width: 38em) {
+  a.cta-btn-m {
+    display: inline-block;
+    position: absolute;
+    right: 130px;
+    top: 0;
+  }
+}
+
 .small-logo {
   position: absolute;
   left: 2px;
@@ -831,6 +906,12 @@ a.tel {
 
 .nav-contact a {
   display: block;
+}
+
+@media only screen and (min-width: 38em) {
+  .nav-top .cta {
+    display: none;
+  }
 }
 
 .nav-sm li {
@@ -864,13 +945,10 @@ a.tel {
     display: none;
   }
   .nav-top {
-    width: 100%;
     display: inline-block;
-    overflow: auto;
-    float: right;
-  }
-  .nav ul {
-    text-align: center;
+    position: absolute;
+    right: 140px;
+    top: 6px;
   }
   .nav ul li {
     display: inline-block;
@@ -880,6 +958,9 @@ a.tel {
   .nav a:link,
   .nav a:visited {
     padding-left: 20px;
+  }
+  .nav-contact {
+    display: none;
   }
 }
 
@@ -1010,7 +1091,7 @@ a {
   opacity: 1;
 }
 
-.quote-btn {
+.cta-btn-sm {
   font-size: 0.95em;
   font-weight: 600;
   z-index: 2;
@@ -1049,22 +1130,91 @@ a {
     }*/
 }
 
-.quote-btn:hover {
+.cta-btn-sm:hover {
   color: #fff;
 }
 
-.quote-btn:active {
+.cta-btn-sm:active {
   color: #fff;
 }
 
-.quote-btn:hover:after {
+.cta-btn-sm:hover:after {
   height: 111%;
   opacity: 1;
 }
 
-.quote-btn:active:after {
+.cta-btn-sm:active:after {
   height: 110%;
   opacity: 1;
+}
+
+.cta-btn-m {
+  font-size: 0.95em;
+  font-weight: 600;
+  z-index: 2;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  color: #ffffff;
+  background-color: #303030;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 10px 14px;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  /*&:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 101%;
+        height: 0;
+        top: 50%;
+        left: 50%;
+        background: $color;
+        opacity: 0;
+        
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }*/
+  display: none;
+}
+
+.cta-btn-m:hover {
+  color: #fff;
+}
+
+.cta-btn-m:active {
+  color: #fff;
+}
+
+.cta-btn-m:hover:after {
+  height: 111%;
+  opacity: 1;
+}
+
+.cta-btn-m:active:after {
+  height: 110%;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 38em) {
+  .cta-btn-m {
+    display: inline-block;
+  }
+}
+
+.cta-btn-m {
+  padding: 5px 10px;
+  margin-top: 2px;
 }
 
 #intro {
@@ -1092,4 +1242,14 @@ a {
 
 #slide-2 {
   background-image: url(../../images/placeholder3.jpg);
+}
+
+#services {
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+#our-work {
+  text-align: center;
+  margin-top: 1rem;
 }

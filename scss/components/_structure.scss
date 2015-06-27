@@ -71,6 +71,11 @@ section aside.content {
     }
 }
 
+.section aside.content div {
+    display: block;
+    position: relative;
+}
+
 section.flip-layout aside.media {
     @media #{$media-m} { 
         left: 50%;
@@ -210,4 +215,42 @@ section.flip-layout aside.content {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+}
+
+// Three Column
+
+.wide-holder {
+    background-color: $dark;
+    color: $white;
+    padding: 2%;
+    @media #{$media-m} {
+        padding: 10%;
+    }
+}
+
+.three-col{
+    div {
+        background-color: $lightgrey;
+        color: $dark;
+        padding: 2%;
+        margin-bottom: 1rem;
+        img {
+            max-width: 200px;
+            margin: 2rem auto 0;
+        }
+    }
+    @media #{$media-m} {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        div {
+            display: flex;
+            flex-flow: column;
+            align-items: center;  
+            margin-bottom: 0;
+        }
+        div:nth-child(2){
+            margin: 0 2em;
+        }
+    }
 }
