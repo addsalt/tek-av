@@ -95,7 +95,7 @@ section.flip-layout aside.content {
 
 .carousel-wrapper {
     position: relative;
-    height: auto;
+    min-height: 1100px;
     
     @media #{$media-m} {
         min-height: 600px;
@@ -232,10 +232,11 @@ section.flip-layout aside.content {
         background-color: $lightgrey;
         color: $dark;
         padding: 2%;
-        margin-bottom: 1rem;
+        width: 90%;
+        margin: 0 auto 1rem;
         img {
             max-width: 200px;
-            margin: 2rem auto 0;
+            margin: 6% auto 0;
         }
     }
     @media #{$media-m} {
@@ -320,3 +321,36 @@ td {
 .back {
 	transform: rotateY(180deg);
 }
+
+
+// Full-width Slider
+
+#testimonials {
+    text-align: center;
+    padding-top: 2rem;
+    position: relative;
+    width: 100%;
+    background-color: grey;
+    .slider {
+        display: table-cell;
+        text-align: center;
+        position: relative;
+        width: 100%;
+        padding: 6% 0 8%;
+    }
+    .slider-nav {
+        text-align: center;
+        position: absolute;
+        bottom: 1rem;
+        right: 0;
+        left: 0;
+    }
+    .slide p {
+        padding: 0 2%;
+        @media #{$media-m} {
+            padding: 0 30%;
+        }
+    }
+    
+}
+
