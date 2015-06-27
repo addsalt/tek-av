@@ -8,6 +8,7 @@
 	<meta name="description" content="La web personal de Mariella Ackermann Menacho">
 	<link href="css/style.css" rel="stylesheet">
 	<title>Tek-AV · Audio and Video Expertise</title>
+    <script src="js/modernizr.custom.js"></script>
 </head>
 	
 <body>
@@ -246,14 +247,24 @@
     
     <footer>
         <h2>Time to get Tekky</h2>
-        <p>Ready to surround yourself with glorious video and sound?</p>
-        <a class="btn">Get a custom quote</a>
-        <p>Prefer to chat in person? Email Keith at <a href="#">start@tek-av.ca</a> or call <a href="">613-238-2836</a></p>
+        <p>Ready to surround yourself with glorious AV?</p>
+        <button class="md-trigger btn" data-modal="modal-1">Get a custom quote</button>
+        <p class="push-top-1">Prefer to chat in person? Email Keith at <a href="#">start@tek-av.ca</a> or call <a href="">613-238-2836</a></p>
         <ul class="nav-sm push-top-1">
             <li><a href="#">Facebook</a></li>
             <li><a href="#">Instagram</a></li>
         </ul>
         <p class="font_small push-top-2">©2012-2015 Tek-AV Inc.</p>
+        
+        <div class="md-modal md-effect-1" id="modal-1">
+			<div class="md-content">
+				<h3>Modal Dialog</h3>
+				<div>
+					<button class="md-close">Close me!</button>
+				</div>
+			</div>
+		</div>
+        <div class="md-overlay"></div><!-- the overlay element -->
     </footer>
 
     <!--<section id="about-intro">
@@ -273,5 +284,15 @@
          });
      });
     </script>
+    <!-- classie.js by @desandro: https://github.com/desandro/classie -->
+		<script src="js/classie.js"></script>
+		<script src="js/modalEffects.js"></script>
+    <!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+    <script>
+        // this is important for IEs
+        var polyfilter_scriptpath = '/js/';
+    </script>
+    <script src="js/cssParser.js"></script>
+    <script src="js/css-filters-polyfill.js"></script>
 </body>
 </html>
