@@ -843,6 +843,60 @@ section aside.content {
   }
 }
 
+/*
+.two-split {
+    display: block;
+    position: relative;
+    width: 100%;
+    @media only screen and (min-width: 38em) {
+        .ts-left {
+            width: 45%;
+            display: block;
+            float: left;
+            display: table-cell;
+            vertical-align: top;
+        }
+        .ts-right {
+            width: 55%;
+            display: inline-block;
+        }
+    }
+}
+
+
+
+*/
+table, td {
+  border: none;
+  border-collapse: collapse;
+}
+
+table {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+td {
+  display: block;
+  width: 100%;
+  vertical-align: top;
+}
+
+@media only screen and (min-width: 38em) {
+  td {
+    display: table-cell;
+  }
+  td.left {
+    width: 45%;
+    text-align: right;
+  }
+  td.right {
+    width: 55%;
+    text-align: left;
+    padding-left: 2rem;
+  }
+}
+
 .hide-text {
   text-indent: 100%;
   white-space: nowrap;
@@ -1032,6 +1086,10 @@ small, .font_small {
 
 a {
   color: #303030;
+}
+
+.no-margin-top {
+  margin-top: 0px;
 }
 
 .btn {

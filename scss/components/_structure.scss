@@ -254,3 +254,56 @@ section.flip-layout aside.content {
         }
     }
 }
+
+// Two Split
+/*
+.two-split {
+    display: block;
+    position: relative;
+    width: 100%;
+    @media #{$media-m} {
+        .ts-left {
+            width: 45%;
+            display: block;
+            float: left;
+            display: table-cell;
+            vertical-align: top;
+        }
+        .ts-right {
+            width: 55%;
+            display: inline-block;
+        }
+    }
+}
+
+
+
+*/
+
+table, td {
+    border: none;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+td {
+    display: block;
+    width: 100%;
+    vertical-align: top;
+    @media #{$media-m} {
+        display: table-cell;
+        &.left {
+            width: 45%;
+            text-align: right;
+        }
+        &.right {
+            width: 55%;
+            text-align: left;
+            padding-left: 2rem;
+        }
+    }
+}
