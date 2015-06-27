@@ -1,0 +1,25 @@
+// Project-Specific Styles
+
+#intro {
+    background: $lightgrey;
+    padding: 2%
+}
+
+#about-intro aside.media {
+    background-image: url(http://www.placehold.it/700x700/c1c1c1);
+    background-size: cover;
+}
+
+#i-1, #i-2, #i-3 {
+    background-color: $lightgrey;
+}
+
+#slide-0 {
+  background-image: url(../../images/placeholder1.jpg);
+}
+#slide-1 {
+  background-image: url(../../images/placeholder2.jpg);
+}
+#slide-2 {
+  background-image: url(../../images/placeholder3.jpg);
+}
