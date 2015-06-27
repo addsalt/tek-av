@@ -790,10 +790,6 @@ section aside.content {
   padding: 2%;
 }
 
-#slider-intro aside.content {
-  background-color: teal;
-}
-
 #about-intro aside.media {
   background-image: url(http://www.placehold.it/700x700/95a5a6);
   background-size: cover;
@@ -863,6 +859,13 @@ section aside.content {
 
 .carousel-wrapper {
   position: relative;
+  height: auto;
+}
+
+@media only screen and (min-width: 38em) {
+  .carousel-wrapper {
+    min-height: 600px;
+  }
 }
 
 .carousel-item {
@@ -929,7 +932,7 @@ section aside.content {
   opacity: 1;
 }
 
-#i-1 {
+#i-1, #i-2, #i-3 {
   background-color: #ecf0f1;
 }
 
