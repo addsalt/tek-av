@@ -661,6 +661,9 @@ section aside.content div ul {
 .carousel-wrapper {
   position: relative;
   min-height: 1100px;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
 }
 
 @media only screen and (min-width: 38em) {
@@ -1631,7 +1634,7 @@ button, input, select, textarea {
 
 #services {
   text-align: center;
-  padding-top: 1.5rem;
+  padding-top: 3rem;
 }
 
 .two-split, .logos {
@@ -1641,6 +1644,7 @@ button, input, select, textarea {
 #our-work {
   text-align: center;
   margin-top: 1rem;
+  padding-top: 3rem;
 }
 
 footer {

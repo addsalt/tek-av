@@ -96,6 +96,9 @@ section.flip-layout aside.content {
 .carousel-wrapper {
     position: relative;
     min-height: 1100px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
     
     @media #{$media-m} {
         min-height: 600px;
