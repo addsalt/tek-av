@@ -700,7 +700,7 @@ section {
 
 @media only screen and (min-width: 38em) {
   section {
-    min-height: 800px;
+    min-height: 600px;
   }
 }
 
@@ -738,12 +738,14 @@ section aside.media {
 
 @media only screen and (min-width: 38em) {
   section aside.media {
+    height: auto;
     width: 50%;
     position: absolute;
     vertical-align: middle;
     overflow: hidden;
     left: 0;
     top: 0;
+    bottom: 0;
   }
 }
 
@@ -751,7 +753,6 @@ section aside.content {
   width: 100%;
   position: relative;
   box-sizing: border-box;
-  background-color: #3498db;
   color: #fff;
 }
 
@@ -769,8 +770,22 @@ section aside.content {
   padding: 2%;
 }
 
+#about-intro aside.content {
+  background-color: aquamarine;
+}
+
+#slider-intro aside.content {
+  background-color: teal;
+}
+
 #about-intro aside.media {
   background-image: url(http://www.placehold.it/700x700/95a5a6);
+  background-size: cover;
+}
+
+#slider-intro aside.media {
+  background-image: url(http://www.placehold.it/700x700/e6e6e6);
+  background-size: cover;
 }
 
 .btn {
@@ -840,7 +855,6 @@ section aside.content {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 25px 50px;
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
           transition: all 0.5s ease-in-out;
