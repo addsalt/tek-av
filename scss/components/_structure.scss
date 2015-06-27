@@ -255,30 +255,7 @@ section.flip-layout aside.content {
     }
 }
 
-// Two Split
-/*
-.two-split {
-    display: block;
-    position: relative;
-    width: 100%;
-    @media #{$media-m} {
-        .ts-left {
-            width: 45%;
-            display: block;
-            float: left;
-            display: table-cell;
-            vertical-align: top;
-        }
-        .ts-right {
-            width: 55%;
-            display: inline-block;
-        }
-    }
-}
-
-
-
-*/
+// Two Split Table
 
 table, td {
     border: none;
@@ -306,4 +283,41 @@ td {
             padding-left: 2rem;
         }
     }
+}
+
+// Flip
+
+.flip-container {
+	perspective: 1000;
+}
+.flipper:hover {
+    transform: rotateY(180deg);
+}
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+    cursor: pointer;
+
+	position: relative;
+}
+
+.front {
+    backface-visibility: hidden;
+}
+
+.back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+.back {
+	transform: rotateY(180deg);
 }
