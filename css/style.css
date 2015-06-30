@@ -573,7 +573,7 @@ section {
 
 @media only screen and (min-width: 38em) {
   section {
-    min-height: 600px;
+    min-height: 700px;
   }
 }
 
@@ -680,7 +680,7 @@ section aside.content div ul {
 
 @media only screen and (min-width: 38em) {
   .carousel-wrapper {
-    min-height: 600px;
+    min-height: 700px;
   }
 }
 

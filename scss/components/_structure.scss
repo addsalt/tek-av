@@ -9,7 +9,7 @@ section {
     min-height: inherit;
     
     @media #{$media-m} { 
-        min-height: 600px;
+        min-height: 700px;
     }
 }
 
@@ -106,7 +106,7 @@ section.flip-layout aside.content {
         min-height: 1100px;
     }
     @media #{$media-m} {
-        min-height: 600px;
+        min-height: 700px;
     }
 }
 
