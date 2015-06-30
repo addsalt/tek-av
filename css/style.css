@@ -874,16 +874,21 @@ section aside.content div ul {
 }
 
 .three-col div {
-  background-color: #ecf0f1;
   color: #303030;
   padding: 1%;
-  width: 85%;
+  width: 95%;
   margin: 0 auto 1rem;
 }
 
 .three-col div img {
-  max-width: 200px;
+  max-width: 150px;
   margin: 6% auto 0;
+}
+
+@media only screen and (min-width: 25em) {
+  .three-col div img {
+    max-width: 200px;
+  }
 }
 
 @media only screen and (min-width: 45em) {
@@ -968,17 +973,30 @@ table {
 
 .flipped {
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .front {
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  background-color: #ecf0f1;
+}
+
+.front-content p {
+  font-size: 0.85em;
+}
+
+@media only screen and (min-width: 25em) {
+  .front-content p {
+    font-size: 1em;
+  }
 }
 
 .back {
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #ecf0f1;
   position: absolute;
   top: 0;
   left: 0;

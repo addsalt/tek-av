@@ -295,14 +295,16 @@ section.flip-layout aside.content {
 
 .three-col{
     div {
-        background-color: $lightgrey;
         color: $dark;
         padding: 1%;
-        width: 85%;
+        width: 95%;
         margin: 0 auto 1rem;
         img {
-            max-width: 200px;
+            max-width: 150px;
             margin: 6% auto 0;
+            @media #{$media-s} {
+                max-width: 200px;
+            }
         }
     }
     @media only screen and (min-width: 45em) {
@@ -367,15 +369,30 @@ table {
 }
 
 .flipped {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
 .front {
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    background-color: $lightgrey;
+}
+
+.front-content p {
+    font-size: 0.85em;
+    @media #{$media-s} {
+        font-size: 1em;
+    }
 }
 
 .back {
-	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: $lightgrey;
 	position: absolute;
 	top: 0;
 	left: 0;
