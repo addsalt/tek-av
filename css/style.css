@@ -867,7 +867,7 @@ section aside.content div ul {
   padding: 2%;
 }
 
-@media only screen and (min-width: 38em) {
+@media only screen and (min-width: 60em) {
   .wide-holder {
     padding: 10%;
   }

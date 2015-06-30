@@ -288,7 +288,7 @@ section.flip-layout aside.content {
     background-color: $dark;
     color: $white;
     padding: 2%;
-    @media #{$media-m} {
+    @media #{$media-l} {
         padding: 10%;
     }
 }
