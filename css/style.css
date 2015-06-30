@@ -885,7 +885,7 @@ section aside.content div ul {
   margin: 6% auto 0;
 }
 
-@media only screen and (min-width: 25em) {
+@media only screen and (min-width: 60em) {
   .three-col div img {
     max-width: 200px;
   }
@@ -910,6 +910,8 @@ section aside.content div ul {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
+    padding-bottom: .75rem;
     -webkit-flex-flow: column;
         -ms-flex-flow: column;
             flex-flow: column;
@@ -920,7 +922,7 @@ section aside.content div ul {
     margin-bottom: 0;
   }
   .three-col div:nth-child(2) {
-    margin: 0 2em;
+    margin: 0;
   }
 }
 

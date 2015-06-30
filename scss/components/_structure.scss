@@ -302,7 +302,7 @@ section.flip-layout aside.content {
         img {
             max-width: 150px;
             margin: 6% auto 0;
-            @media #{$media-s} {
+            @media #{$media-l} {
                 max-width: 200px;
             }
         }
@@ -313,12 +313,14 @@ section.flip-layout aside.content {
         justify-content: center;
         div {
             display: flex;
+            width: 100%;
+            padding-bottom: .75rem;
             flex-flow: column;
             align-items: center;  
             margin-bottom: 0;
         }
         div:nth-child(2){
-            margin: 0 2em;
+            margin: 0;
         }
     }
 }
