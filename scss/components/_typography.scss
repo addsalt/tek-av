@@ -49,3 +49,18 @@ a {
 .no-margin-top {
     margin-top: 0px;
 }
+
+.no-m-b {
+    margin-bottom: 0px;
+}
+
+.no-list {
+    list-style-type: none;
+}
+
+.inline-block li {
+    @media #{$media-m} { 
+        display: inline-block;
+        margin: 0 5px;
+    }
+}

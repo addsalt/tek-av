@@ -660,10 +660,22 @@ section aside.content div ul {
 
 .carousel-wrapper {
   position: relative;
-  min-height: 1100px;
+  min-height: 1350px;
   width: 90%;
   margin: 0 auto;
   margin-bottom: 4rem;
+}
+
+@media only screen and (min-width: 20em) {
+  .carousel-wrapper {
+    min-height: 1150px;
+  }
+}
+
+@media only screen and (min-width: 25em) {
+  .carousel-wrapper {
+    min-height: 1100px;
+  }
 }
 
 @media only screen and (min-width: 38em) {
@@ -685,24 +697,58 @@ section aside.content div ul {
 
 .arrow {
   position: absolute;
-  top: 0;
-  display: block;
-  width: 50px;
+  top: .5rem;
+  display: inline-block;
   height: 50px;
   -webkit-tap-highlight-color: transparent;
   background-color: transparent;
-  background: url(../../images/slider-arrow.png) 50% 50%/20px no-repeat;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.85rem;
 }
 
-.arrow-prev {
-  left: 0;
+.arrow:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url(../../images/slider-arrow.png) 0 50%/20px no-repeat;
 }
 
-.arrow-next {
+.arrow-right {
+  right: .5rem;
+  padding-right: 25px;
+  padding-top: 3px;
+}
+
+@media only screen and (min-width: 45em) {
+  .arrow-right {
+    color: #303030;
+  }
+}
+
+.arrow-right:after {
   right: 0;
   -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-      transform: rotate(180deg);
+}
+
+@media only screen and (min-width: 45em) {
+  .arrow-right:after {
+    -webkit-filter: brightness(-3);
+    filter: brightness(-3);
+  }
+}
+
+.arrow-left {
+  left: .5rem;
+  padding-left: 25px;
+  padding-top: 3px;
+}
+
+.arrow-left:after {
+  left: 0;
 }
 
 [id^="target-item"] {
@@ -753,10 +799,31 @@ section aside.content div ul {
   height: 100%;
 }
 
+.slide > .caption {
+  position: absolute;
+  bottom: 0rem;
+  left: 1rem;
+  color: white;
+  font-style: italic;
+  width: 70%;
+}
+
 .slide {
   float: left;
   width: 33.333333%;
   height: 100%;
+}
+
+.slide:after {
+  content: '';
+  position: absolute;
+  color: #fff;
+  z-index: 7;
+  bottom: .85rem;
+  left: 1rem;
+  width: 70%;
+  font-size: 0.85em;
+  font-style: italic;
 }
 
 .slider-nav {
@@ -771,11 +838,17 @@ section aside.content div ul {
 .slider-nav a {
   width: 10px;
   height: 10px;
-  display: inline-block;
+  display: block;
   border: solid 1px white;
   overflow: hidden;
   text-indent: -9999px;
   border-radius: 50%;
+  margin: 8px 0 0;
+}
+
+.slider-nav-test a {
+  display: inline-block;
+  margin: 0 0 0;
 }
 
 .slider-nav a.active {
@@ -804,7 +877,6 @@ section aside.content div ul {
   background-color: #ecf0f1;
   color: #303030;
   padding: 2%;
-  width: 90%;
   margin: 0 auto 1rem;
 }
 
@@ -813,7 +885,7 @@ section aside.content div ul {
   margin: 6% auto 0;
 }
 
-@media only screen and (min-width: 38em) {
+@media only screen and (min-width: 45em) {
   .three-col {
     display: -webkit-box;
     display: -webkit-flex;
@@ -882,11 +954,6 @@ table {
           perspective: 1000;
 }
 
-.flipper:hover {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
 .flipper {
   -webkit-transition: -webkit-transform 800ms cubic-bezier(0.33, 0.28, 0.18, 0.99);
   transition: transform 800ms cubic-bezier(0.33, 0.28, 0.18, 0.99);
@@ -896,6 +963,11 @@ table {
           transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
+}
+
+.flipped {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .front {
@@ -909,6 +981,19 @@ table {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.back h5 {
+  margin-top: 1rem;
+}
+
+.back .bottom {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 0;
 }
 
 .front {
@@ -918,8 +1003,13 @@ table {
 }
 
 .back {
+  cursor: auto;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+}
+
+.see-less {
+  cursor: pointer;
 }
 
 #testimonials {
@@ -958,6 +1048,8 @@ table {
 
 .logos ul li {
   display: inline-block;
+  width: 100px;
+  margin: 0 5px;
 }
 
 .md-content section {
@@ -969,6 +1061,45 @@ table {
   .md-content section {
     min-height: 1px;
   }
+}
+
+@media only screen and (min-width: 38em) {
+  input.checkbox {
+    display: inline-block;
+  }
+}
+
+.mini-cards {
+  margin-top: 2rem;
+  list-style-type: none;
+}
+
+.mini-cards li {
+  height: 4rem;
+  width: 10rem;
+  background-color: #ecf0f1;
+  margin: 0 0.625em 0.625em;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+}
+
+.mini-cards li img {
+  height: 40px;
+  width: 40px;
+  top: 12px;
+  bottom: 0;
+  left: 12px;
+  position: absolute;
+}
+
+.mini-cards li h5 {
+  position: absolute;
+  color: #303030;
+  left: 60px;
+  padding-right: .5rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
 }
 
 .hide-text {
@@ -1006,11 +1137,19 @@ header {
   text-indent: 2.8rem;
 }
 
-a.tel {
-  display: inline-block;
+.nav-contact a {
+  display: block;
+}
+
+.nav-contact-2 {
   position: absolute;
-  top: 10px;
+  top: 4px;
   right: 40px;
+}
+
+.nav-contact-2 li {
+  display: inline-block;
+  margin-left: 5px;
 }
 
 a.cta-btn-m {
@@ -1021,7 +1160,7 @@ a.cta-btn-m {
   a.cta-btn-m {
     display: inline-block;
     position: absolute;
-    right: 130px;
+    right: 235px;
     top: 0;
   }
 }
@@ -1029,11 +1168,8 @@ a.cta-btn-m {
 .small-logo {
   position: absolute;
   left: 2px;
-  top: 2px;
-}
-
-.nav-contact a {
-  display: block;
+  top: 3px;
+  width: 100px;
 }
 
 @media only screen and (min-width: 38em) {
@@ -1100,7 +1236,7 @@ a.cta-btn-m {
   .nav ul {
     text-align: left;
     float: right;
-    margin-right: 8rem;
+    margin-right: 14.75rem;
   }
 }
 
@@ -1164,6 +1300,21 @@ a {
 
 .no-margin-top {
   margin-top: 0px;
+}
+
+.no-m-b {
+  margin-bottom: 0px;
+}
+
+.no-list {
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 38em) {
+  .inline-block li {
+    display: inline-block;
+    margin: 0 5px;
+  }
 }
 
 .btn {
@@ -1347,6 +1498,83 @@ a {
 .cta-btn-m {
   padding: 5px 10px;
   margin-top: 2px;
+}
+
+footer {
+  position: relative;
+}
+
+.btt {
+  font-size: 0.95em;
+  font-weight: 600;
+  z-index: 2;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  color: #ffffff;
+  background-color: #303030;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 10px 14px;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  /*&:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 101%;
+        height: 0;
+        top: 50%;
+        left: 50%;
+        background: $color;
+        opacity: 0;
+        
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }*/
+  width: 40px;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  background: #303030 url(../../images/slider-arrow.png) 50% 50%/20px no-repeat;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+  display: block;
+}
+
+.btt:hover {
+  color: #fff;
+}
+
+.btt:active {
+  color: #fff;
+}
+
+.btt:hover:after {
+  height: 111%;
+  opacity: 1;
+}
+
+.btt:active:after {
+  height: 110%;
+  opacity: 1;
+}
+
+.btt:after {
+  content: 'TOP';
+  position: absolute;
+  color: #303030;
+  top: -80px;
 }
 
 /* General styles for the modal */
@@ -1621,15 +1849,20 @@ button, input, select, textarea {
 }
 
 #slide-0 {
-  background-image: url(../../images/placeholder1.jpg);
+  background-image: url("http://placehold.it/1400x1400/666666/ffffff");
+  position: relative;
+}
+
+#slide-0:after {
+  content: 'Optional caption for each image. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.';
 }
 
 #slide-1 {
-  background-image: url(../../images/placeholder2.jpg);
+  background-image: url(http://placehold.it/1400x1400/333333/ffffff);
 }
 
 #slide-2 {
-  background-image: url(../../images/placeholder3.jpg);
+  background-image: url(http://placehold.it/1400x1400/555555/ffffff);
 }
 
 #services {
@@ -1658,4 +1891,17 @@ footer {
     text-align: right;
     padding-left: 10rem;
   }
+}
+
+dl dt {
+  font-size: 3em;
+}
+
+.unflip-btn {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
 }

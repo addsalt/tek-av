@@ -26,15 +26,21 @@
 }
 
 #slide-0 {
-  background-image: url(../../images/placeholder1.jpg);
-}
-#slide-1 {
-  background-image: url(../../images/placeholder2.jpg);
-}
-#slide-2 {
-  background-image: url(../../images/placeholder3.jpg);
+    background-image: url("http://placehold.it/1400x1400/666666/ffffff");
+    position: relative;
 }
 
+#slide-0:after {
+    content: 'Optional caption for each image. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.';
+}
+
+#slide-1 {
+  background-image: url(http://placehold.it/1400x1400/333333/ffffff);
+}
+
+#slide-2 {
+  background-image: url(http://placehold.it/1400x1400/555555/ffffff);
+}
 
 #services {
     text-align: center;
@@ -64,4 +70,18 @@ footer {
             padding-left: 10rem;
         }
     }
+}
+
+dl {
+    dt {
+        font-size: 3em;
+    }
+}
+
+.unflip-btn {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 }

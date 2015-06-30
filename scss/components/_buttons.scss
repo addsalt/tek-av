@@ -19,3 +19,26 @@
         margin-top: 2px;
     }
 }
+
+footer {
+    position: relative;
+}
+
+.btt {
+    @include button($dark, $spot, 0);
+    width: 40px;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    background: $dark url(../../images/slider-arrow.png) 50% 50% / 20px no-repeat;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    display: block;
+}
+
+.btt:after {
+    content: 'TOP';
+    position: absolute;
+    color: $dark;
+    top: -80px;
+}

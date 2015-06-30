@@ -14,25 +14,28 @@
 <body>
 
     <header>
-        <img class="small-logo" src="http://placehold.it/100x29/">
+        <a class="smooth-scroll" href="#intro"><img class="small-logo" src="http://placehold.it/200x58/"></a>
         <nav class="nav nav-top" data-state="collapsed">
             <ul>
-                <li><a href="#about-us">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#our-work">Experience</a></li>
-                <li class="cta"><a href="#contact" class="cta-btn-sm">Get a Quote</a></li>
+                <li><a class="smooth-scroll" href="#about-us">About</a></li>
+                <li><a class="smooth-scroll" href="#services">Services</a></li>
+                <li><a class="smooth-scroll" href="#our-work">Experience</a></li>
+                <li class="cta"><a href="#contact" class="cta-btn-sm smooth-scroll">Get a Quote</a></li>
                 <div class="nav-contact push-top-1">
-                    <a href="#">613-234-2345</a>
-                    <a href="#">start@tek-av.ca</a>
-                    <ul class="nav-sm push-top-1">
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
+                    <a class="smooth-scroll" href="#">613-123-1234</a>
+                    <a class="smooth-scroll" href="#">start@tek-av.ca</a>
+                    <ul class="nav-sm push-top-1 inline-block">
+                        <li><a class="smooth-scroll" href="#">Facebook</a></li>
+                        <li><a class="smooth-scroll" href="#">Instagram</a></li>
                     </ul>
                 </div>
             </ul>
         </nav>
-        <a href="#contact" class="cta-btn-m">Get a Quote</a>
-        <a class="tel font_small" href="#">613-234-2345</a>
+        <a href="#contact" class="cta-btn-m smooth-scroll">Get a Quote</a>
+        <ul class="nav-contact-2">
+            <li><a class="tel font_small" href="#">613-123-1234</a></li>
+            <li><a class="email font_small" href="#">start@tek-av.ca</a></li>
+        </ul>
         <a class="nav-btn" href="#nav">Nav</a>
 	</header>
         
@@ -42,7 +45,7 @@
         <div id="intro">
             <h1>Tek-AV:</br>Audio and Video installations done right</h1>
             <p>Custom, local solutions made with a smile.</p>
-            <a class="btn" href="#">Learn more</a>
+            <a class="btn smooth-scroll" href="#about-us">Learn more</a>
         </div>
         
         <!-- About Us -->
@@ -60,53 +63,108 @@
         <!-- Services -->
         <section id="services" class="wide-holder">
             <h1 class="dos">Our Services</h1>
-            <div class="three-col flip-container" ontouchstart="this.classList.toggle('hover');">
-                <div class="flipper">
-                    <div class="front">
-                        <img class="flex-img" src="http://placehold.it/150x150/"></img>
+            <div class="three-col flip-container" id="flipHolder" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper" id="flipper-1">
+                    <div class="front" id="front-1">
+                        <img class="flex-img" src="http://placehold.it/300x300/666666/ffffff"></img>
                         <h2 class="cuatro">Audio</h2>
                         <p>Get your groove on</p>
                         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.</p>
+                        <a class="flip-btn btn">See more</a>
                     </div>    
-                    <div class="back">
-                        <h5>Prices and Items</h5>
-                        <dl>
-                            <dt>Something</dd>
-                            <dd>Something else</dt>
+                    <div class="back" id="back-1">
+                        <dl class="push-top-3">
+                            <dt>$300</dd>
+                            <dd>
+                                <p class="no-m-b">Home-wide installation</p>
+                                <p class="font_small">Up to 4 rooms, 6 speakers</p>
+                            </dd>
+                            <dt>$150</dd>
+                            <dd>
+                                <p class="no-m-b">Single-room installations</p>
+                                <p class="font_small">Up to 4 speakers</p>
+                            </dd>
                         </dl>
+                        <span class="bottom">
+                            <a href="#contact" class="btn smooth-scroll">Get a custom quote</a>
+                            <a class="font_small see-less push-top-1">See less</a>
+                        </span>
                     </div>
                 </div>
-                <div class="flipper">
-                    <div class="front">
-                        <img class="flex-img" src="http://placehold.it/150x150/"></img>
+                <div class="flipper" id="flipper-2">
+                    <div class="front" id="front-2">
+                        <img class="flex-img" src="http://placehold.it/300x300/666666/ffffff"></img>
                         <h2 class="cuatro">Video</h2>
-                        <p>Just add popcorn</p>
+                        <p>You provide the popcorn</p>
                         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.</p>
+                        <a class="flip-btn btn">See more</a>
                     </div>    
-                    <div class="back">
-                        <h5>Prices and Items</h5>
-                        <dl>
-                            <dt>Something</dd>
-                            <dd>Something else</dt>
+                    <div class="back" id="back-2">
+                        <dl class="push-top-3">
+                            <dt>$240</dt>
+                            <dd>
+                                <p class="no-m-b">Less than 50" TV</p>
+                                <p class="font_small">Installation and Mounting</p>
+                            </dd>
+                        
+                            <dt>$349</dt>
+                            <dd>
+                                <p class="no-m-b">Over 50" TV</p>
+                                <p class="font_small">Installation and Mounting</p>
+                            </dd>
+                        
                         </dl>
+                        <span class="bottom">
+                            <a href="#contact" class="btn smooth-scroll">Get a custom quote</a>
+                            <a class="font_small see-less push-top-1">See less</a>
+                        </span>
                     </div>
                 </div>
-                <div class="flipper">
-                    <div class="front">
-                        <img class="flex-img" src="http://placehold.it/150x150/"></img>
+                <div class="flipper" id="flipper-3">
+                    <div class="front" id="front-3">
+                        <img class="flex-img" src="http://placehold.it/300x300/666666/ffffff"></img>
                         <h2 class="cuatro">Networking</h2>
                         <p>Stay connected</p>
                         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.</p>
+                        <a class="flip-btn btn">See more</a>
                     </div>    
-                    <div class="back">
-                        <h5>Prices and Items</h5>
-                        <dl>
-                            <dt>Something</dd>
-                            <dd>Something else</dt>
+                    <div class="back" id="back-3">
+                        <dl class="push-top-3">
+                            <dt>$149</dt>
+                            <dd>
+                                <p class="no-m-b">Basic Installation</p>
+                                <p class="font_small">with Network Connection</p>
+                            </dd>
+                            <dt>$199</dt>
+                            <dd>
+                                <p class="no-m-b">Advanced Installation</p>
+                                <p class="font_small">with Wireless Printer Setup &amp; Network Connection</p>
+                            </dd>
+                            <dt>$99</dt>
+                            <dd>
+                                <p class="no-m-b">Basic Router Setup</p>
+                                <p class="font_small">Network 5 Wireless Devices</p>
+                            </dd>
                         </dl>
+                        <span class="bottom">
+                            <a href="#contact" class="btn smooth-scroll">Get a custom quote</a>
+                            <a class="font_small see-less push-top-1">See less</a>
+                        </span>
                     </div>
                 </div>
             </div>
+            
+            <p class="push-top-3">You name it. If it's audio or video, we can do it, and we can do it well.</p>
+            <ul class="mini-cards">
+                <li class="mini-card"><img class="mini-card-i" src="http://www.placehold.it/80x80/666666/ffffff"><h5>Wire Concealment</h5></li>
+                <li class="mini-card"><img class="mini-card-i" src="http://www.placehold.it/80x80/666666/ffffff"><h5>Remote Programing</h5></li>
+                <li class="mini-card"><img class="mini-card-i" src="http://www.placehold.it/80x80/666666/ffffff"><h5>Smart Home Install</h5></li>
+                <li class="mini-card"><img class="mini-card-i" src="http://www.placehold.it/80x80/666666/ffffff"><h5>Network Wiring</h5></li>
+                <li class="mini-card"><img class="mini-card-i" src="http://www.placehold.it/80x80/666666/ffffff"><h5>Speaker Wiring</h5></li>
+                <li class="mini-card"><img class="mini-card-i" src="http://www.placehold.it/80x80/666666/ffffff"><h5>Consultation &amp; Quoting</h5></li>
+                <li class="mini-card"><img class="mini-card-i" src="http://www.placehold.it/80x80/666666/ffffff"><h5>Product Sourcing</h5></li>
+                <li class="mini-card"><img class="mini-card-i" src="http://www.placehold.it/80x80/666666/ffffff"><h5>Technical Support</h5></li>
+            </ul>
             
             <table class="two-split">
                 <tr>
@@ -115,12 +173,11 @@
                     </td>
                     <td class="right">
                         <ul>
-                            <li>TV & Home Theatre System Design and Installation.</li>
-                            <li>Sound Proofing and Music Instrument Rooms</li>
-                            <li>Architectural Sound; In-ceiling and In-wall Speakers</li>
-                            <li>Furniture Setup and Working Space Design</li>
-                            <li>Network Wiring for Home and Office</li>
-                            <li>Custom Commercial Installation Services</li>
+                            <li>TV & Home Theatre system design and installation.</li>
+                            <li>Sound proofing and music instrument rooms</li>
+                            <li>Architectural Sound: In-ceiling and in-wall speakers</li>
+                            <li>Network wiring for home and office</li>
+                            <li>Custom commercial installation services</li>
                         </ul>
                     </td>
                 </tr>
@@ -129,13 +186,13 @@
             <div class="logos">
                 <h4>We use only the best quality products</h4>
                 <ul>
-                    <li><img src="http://placehold.it/70x70/303030/ffffff"></li>
-                    <li><img src="http://placehold.it/70x70/303030/ffffff"></li>
-                    <li><img src="http://placehold.it/70x70/303030/ffffff"></li>
-                    <li><img src="http://placehold.it/70x70/303030/ffffff"></li>
-                    <li><img src="http://placehold.it/70x70/303030/ffffff"></li>
-                    <li><img src="http://placehold.it/70x70/303030/ffffff"></li>
-                    <li><img src="http://placehold.it/70x70/303030/ffffff"></li>
+                    <li><img class="flex-img" src="http://placehold.it/200x200/303030/ffffff"></li>
+                    <li><img class="flex-img" src="http://placehold.it/200x200/303030/ffffff"></li>
+                    <li><img class="flex-img" src="http://placehold.it/200x200/303030/ffffff"></li>
+                    <li><img class="flex-img" src="http://placehold.it/200x200/303030/ffffff"></li>
+                    <li><img class="flex-img" src="http://placehold.it/200x200/303030/ffffff"></li>
+                    <li><img class="flex-img" src="http://placehold.it/200x200/303030/ffffff"></li>
+                    <li><img class="flex-img" src="http://placehold.it/200x200/303030/ffffff"></li>
                 </tr>
             </div>
 
@@ -178,8 +235,8 @@
                         </div>
                     </aside>
                 </section>
-                <a class="arrow arrow-prev" href="#target-item-3"></a>
-                <a class="arrow arrow-next" href="#target-item-2"></a>
+                <a class="arrow arrow-left" href="#target-item-3">Prev project</a>
+                <a class="arrow arrow-right" href="#target-item-2">Next project</a>
             </div>
 
             <div id="i-2" class="carousel-item item-2">
@@ -260,7 +317,7 @@
                     </div>
                 </div>
             </div>
-            <nav class="slider-nav" id="slider-nav">
+            <nav class="slider-nav slider-nav-test" id="slider-nav">
                 <a href="#slide-6">Slide 0</a> 
                 <a href="#slide-7">Slide 1</a> 
                 <a href="#slide-8">Slide 2</a> 
@@ -273,12 +330,18 @@
         <h2>Time to get Tekky</h2>
         <p>Ready to surround yourself with glorious, high definition AV?</p>
         <button class="md-trigger btn" data-modal="modal-1">Get a custom quote</button>
-        <p class="push-top-1">Prefer to chat in person? Email Keith at <a href="#">start@tek-av.ca</a> or call <a href="">613-238-2836</a></p>
-        <ul class="nav-sm push-top-1">
+        <p class="push-top-1">Prefer to chat in person? Email <a href="https://www.linkedin.com/pub/keith-macdougall/48/430/332">Keith</a> at <a href="#">start@tek-av.ca</a> or call <a href="#">613-123-1234</a></p>
+        <ul class="nav-sm push-top-1 inline-block">
             <li><a href="#">Facebook</a></li>
             <li><a href="#">Instagram</a></li>
         </ul>
-        <p class="font_small push-top-2">©2012-2015 Tek-AV Inc.</p>
+        <ul class="font_small push-top-2 copyright no-list inline-block">
+            <li>©2012-2015 Tek-AV Inc.</li>
+            <!--<li><a class="keith" href="#">Who the heck is Keith?</a></li>-->
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <a href="#intro" class="btt hide-text">Back to top</a>
+            
         
         <div class="md-modal md-effect-1" id="modal-1">
 			<div class="md-content">
@@ -303,11 +366,15 @@
                                 <span class="input__label-content input__label-content--yoshiko" data-content="Phone number">Phone number</span>
                             </label>
                         </span>
-                        <p>I am interested in</p>
-                        <input type="checkbox" name="vehicle" value="Audio">Audio Installations<br>
-                        <input type="checkbox" name="vehicle" value="Video">Video Installations<br>
-                        <input type="checkbox" name="vehicle" value="Network">Networking Installations<br>
-                        <input type="submit" value="Submit">
+                        <p class="no-m-b">I am interested in</p>
+                        <input type="checkbox" name="vehicle" value="Audio" class="checkbox">Audio Installations<br>
+                        <input type="checkbox" name="vehicle" value="Video" class="checkbox">Video Installations<br>
+                        <input type="checkbox" name="vehicle" value="Network" class="checkbox">Networking
+                        Installations<br>
+                        <p class="push-top-2 no-m-b">I own</p>
+                        <input type="checkbox" name="vehicle" value="Audio" class="checkbox">A home<br>
+                        <input type="checkbox" name="vehicle" value="Video" class="checkbox">A commercial building<br>
+                        <input class="btn" type="submit" value="Submit">
                     </form>
                 </section>
 				<div>
@@ -328,6 +395,7 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/toggle.js"></script>
     <script>
         $(function(){
         $('#slider-nav a').click(function () {
@@ -346,5 +414,22 @@
     </script>
     <script src="js/cssParser.js"></script>
     <script src="js/css-filters-polyfill.js"></script>
+
+    <script>
+        $(function() {
+          $('.smooth-scroll').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 500);
+                return false;
+              }
+            }
+          });
+        });
+    </script>
 </body>
 </html>
