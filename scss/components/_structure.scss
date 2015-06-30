@@ -100,7 +100,7 @@ section.flip-layout aside.content {
     margin: 0 auto;
     margin-bottom: 4rem;
     @media only screen and (min-width: 20em) {
-        min-height: 1150px;
+        min-height: 1180px;
     }
     @media #{$media-s} {
         min-height: 1100px;
@@ -297,7 +297,8 @@ section.flip-layout aside.content {
     div {
         background-color: $lightgrey;
         color: $dark;
-        padding: 2%;
+        padding: 1%;
+        width: 85%;
         margin: 0 auto 1rem;
         img {
             max-width: 200px;
@@ -469,25 +470,39 @@ input.checkbox {
     margin-top: 2rem;
     list-style-type: none;
     li {
-        height: 4rem;
-        width: 10rem;
         background-color: $lightgrey;
-        margin: 0 .625em .625em;
         text-align: left;
         position: relative;
         display: inline-block;
+        height: 4rem;
+        width: 8.75rem;
+        margin: 0 .25em .25em;
+        @media #{$media-s} { 
+            width: 10rem;
+            margin: 0 .625em .625em;
+        }
         img {
-            height: 40px;
-            width: 40px;
-            top: 12px;
+            height: 30px;
+            width: 30px;
+            top: 17px;
             bottom: 0;
-            left: 12px;
+            left: 8px;
             position: absolute;
+            @media #{$media-s} { 
+                height: 40px;
+                width: 40px;
+                top: 12px;
+                bottom: 0;
+                left: 12px;
+            }
         }
         h5 {
             position: absolute;
             color: $dark;
-            left: 60px;
+            left: 45px;
+            @media #{$media-s} { 
+                left: 60px
+            }
             padding-right: .5rem;
             top: 50%;
             -webkit-transform: translateY(-50%);

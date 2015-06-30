@@ -12,7 +12,10 @@ button, input, select, textarea {
 	position: relative;
 	z-index: 1;
 	display: inline-block;
-	margin: 1em;
+	margin: .5em;
+    @media #{$media-m} {
+        margin: 1em;
+    }
 	max-width: 350px;
 	width: calc(100% - 2em);
 	vertical-align: top;
@@ -22,7 +25,10 @@ button, input, select, textarea {
 	position: relative;
 	display: block;
 	float: right;
-	padding: 0.8em;
+	padding: 0.3em;
+    @media #{$media-s} {
+        padding: 0.8em;
+    }
 	width: 60%;
 	border: none;
 	border-radius: 0;
