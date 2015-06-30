@@ -714,7 +714,7 @@ section aside.content div ul {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: url(../../images/slider-arrow.png) 0 50%/20px no-repeat;
+  background: url(http://justaddsalt.ca/tek-av/images/slider-arrow.png) 0 50%/20px no-repeat;
 }
 
 .arrow-right {
@@ -1545,7 +1545,7 @@ footer {
   position: absolute;
   right: 1rem;
   bottom: 1rem;
-  background: #303030 url(../../images/slider-arrow.png) 50% 50%/20px no-repeat;
+  background: #303030 url(http://justaddsalt.ca/tek-av/images/slider-arrow.png) 50% 50%/20px no-repeat;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
       transform: rotate(90deg);
