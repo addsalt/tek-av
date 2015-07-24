@@ -147,7 +147,7 @@ section.flip-layout aside.content {
     padding-right: 25px;
     padding-top: 3px;
     @media only screen and (min-width: 45em) {
-        color: $dark;
+        color: $charcoal;
     }
 }
 
@@ -285,7 +285,7 @@ section.flip-layout aside.content {
 // Three Column
 
 .wide-holder {
-    background-color: $dark;
+    background-color: $charcoal;
     color: $white;
     padding: 2%;
     @media #{$media-l} {
@@ -295,7 +295,7 @@ section.flip-layout aside.content {
 
 .three-col{
     div {
-        color: $dark;
+        color: $charcoal;
         padding: 1%;
         width: 95%;
         margin: 0 auto 1rem;
@@ -382,13 +382,6 @@ table {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     background-color: $lightgrey;
-}
-
-.front-content p {
-    font-size: 0.85em;
-    @media #{$media-s} {
-        font-size: 1em;
-    }
 }
 
 .back {
@@ -489,7 +482,7 @@ input.checkbox {
     margin-top: 2rem;
     list-style-type: none;
     li {
-        background-color: $lightgrey;
+        background-color: transparent;
         text-align: left;
         position: relative;
         display: inline-block;
@@ -517,7 +510,7 @@ input.checkbox {
         }
         h5 {
             position: absolute;
-            color: $dark;
+            color: $charcoal;
             left: 45px;
             @media #{$media-s} { 
                 left: 60px
