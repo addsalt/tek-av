@@ -2238,7 +2238,31 @@ header .nav-btn:visited {
   background-color: #85a4d8;
 }
 
-m
+#services .you-name-it {
+  margin-top: 3.5rem;
+  padding-bottom: 2.25rem;
+  color: #b4b4b4;
+  letter-spacing: 0.3em;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 2;
+  border-top: 1px solid #b4b4b4;
+  border-bottom: 1px solid #b4b4b4;
+}
+
+#services .you-name-it .black {
+  display: inline-block;
+  color: #4e4e4e;
+  border-top: 3px solid #4e4e4e;
+  margin-top: -3px;
+  padding-top: -webkit-calc(2rem + 4px);
+  padding-top: calc(2rem + 4px);
+}
+
+#services .you-name-it p {
+  margin: 0;
+}
+
 .two-split, .logos {
   margin-top: 6rem;
 }
