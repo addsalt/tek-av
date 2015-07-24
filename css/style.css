@@ -1151,7 +1151,6 @@ header {
   height: 35px;
   background-color: white;
   z-index: 10;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-btn,
@@ -1161,7 +1160,7 @@ header {
   display: block;
   position: absolute;
   right: 0;
-  top: 0;
+  bottom: 0;
   height: 35px;
   width: 35px;
   background: #c1836d url("../images/nav.png") no-repeat center center;
@@ -1171,13 +1170,19 @@ header {
   text-indent: 2.8rem;
 }
 
+.nav-btn:hover,
+.nav-btn:link:hover,
+.nav-btn:visited:hover {
+  background-color: #f4f4f4;
+}
+
 .nav-contact a {
   display: block;
 }
 
 .nav-contact-2 {
   position: absolute;
-  top: 4px;
+  bottom: 4px;
   right: 40px;
 }
 
@@ -1201,9 +1206,9 @@ a.cta-btn-m {
 
 .small-logo {
   position: absolute;
+  bottom: 4px;
   left: 2px;
-  top: 3px;
-  width: 100px;
+  width: 103px;
 }
 
 @media only screen and (min-width: 38em) {
@@ -1840,9 +1845,47 @@ button, input, select, textarea {
   border-color: #c1836d;
 }
 
-/*#header {
-    height: 6.5625rem;
-}*/
+header {
+  padding-top: 1rem;
+  height: 6.25rem;
+  border-bottom: 1px solid #d9d9d9;
+  width: 86%;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+header .small-logo {
+  left: 0;
+  bottom: 1rem;
+  width: 100px;
+}
+
+header .nav-contact-2 {
+  bottom: .925rem;
+  right: 40px;
+  font-size: .6875rem;
+}
+
+header .nav-contact-2 li a {
+  color: #b4b4b4;
+}
+
+header .nav-btn,
+header .nav-btn:link,
+header .nav-btn:visited {
+  bottom: .75rem;
+  right: 0;
+  height: 30px;
+  width: 30px;
+  border: solid 2px #c1836d;
+  border-radius: 5px;
+  background: transparent url("../images/nav.png") no-repeat center center;
+  background-size: 13px;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  text-indent: 9999px;
+}
+
 .nav a,
 .nav a:link,
 .nav a:visited {
@@ -1853,13 +1896,37 @@ button, input, select, textarea {
 #intro {
   background: #fff;
   padding: 7%;
-  padding-top: 50px;
-  padding-bottom: 2rem;
+  padding-top: -webkit-calc(6.25rem + 5%);
+  padding-top: calc(6.25rem + 5%);
+}
+
+@media only screen and (min-width: 38em) {
+  #intro {
+    padding: -webkit-calc(50px + 5%) 10% 5%;
+    padding: calc(50px + 5%) 10% 5%;
+  }
 }
 
 #intro h1 {
   letter-spacing: 0.01em;
   line-height: 1.333333333;
+  font-size: 2.25em;
+}
+
+@media only screen and (min-width: 38em) {
+  #intro h1 {
+    font-size: 3.375em;
+  }
+}
+
+#intro h1 .tek-av {
+  display: none;
+}
+
+@media only screen and (min-width: 38em) {
+  #intro h1 .tek-av {
+    display: inline-block;
+  }
 }
 
 #intro h1 .tagline {
@@ -1872,30 +1939,20 @@ button, input, select, textarea {
   color: #c1836d;
 }
 
-@media only screen and (min-width: 38em) {
-  #intro {
-    padding: -webkit-calc(50px + 5%) 35% 5% 15%;
-    padding: calc(50px + 5%) 35% 5% 15%;
-  }
-  #intro h1 {
-    max-width: 39rem;
-  }
-}
-
 #about-intro aside.media {
   background-image: url(http://www.placehold.it/700x700/c1c1c1);
   background-size: cover;
 }
 
 #about-us {
-  padding: 7%;
+  padding: 7% 0;
   background-color: #2c2c2c;
   color: #fff;
 }
 
 @media only screen and (min-width: 38em) {
   #about-us {
-    padding: 5% 15%;
+    padding: 5% 10%;
   }
 }
 
@@ -1904,22 +1961,62 @@ button, input, select, textarea {
   line-height: 1;
   color: #fff;
   font-size: 2.25rem;
-  border-top: 6px solid white;
   padding-top: 30px;
   display: inline-block;
   letter-spacing: 0.0025em;
+  margin-top: -6px;
 }
 
-#about-us h2.local-service {
+#about-us p {
+  padding: 13px 0 30px;
+}
+
+#about-us .local-service, #about-us .dream-setup, #about-us .crafted {
+  padding: 7%;
+  padding-top: -webkit-calc(7% + 20px);
+  padding-top: calc(7% + 20px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#about-us .local-service {
+  background-image: url(../../images/local-service.jpg);
+  margin-top: 30px;
+}
+
+#about-us .local-service h2 {
   border-top: 6px solid #c1836d;
 }
 
-#about-us h2.dream-setup {
+#about-us .local-service p {
+  border-bottom: 1px solid #c1836d;
+}
+
+#about-us .dream-setup {
+  margin-top: 60px;
+  background-image: url(../../images/local-service.jpg);
+}
+
+#about-us .dream-setup h2 {
   border-top: 6px solid #edd267;
 }
 
-#about-us h2.crafted {
+#about-us .dream-setup p {
+  border-bottom: 1px solid #edd267;
+}
+
+#about-us .crafted {
+  margin-top: 60px;
+  background-image: url(../../images/local-service.jpg);
+}
+
+#about-us .crafted h2 {
   border-top: 6px solid #85a4d8;
+}
+
+#about-us .crafted p {
+  border-bottom: 1px solid #85a4d8;
 }
 
 #about-us p {
