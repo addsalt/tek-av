@@ -295,17 +295,9 @@ section.flip-layout aside.content {
 
 .three-col{
     div {
-        color: $charcoal;
-        padding: 1%;
-        width: 95%;
-        margin: 0 auto 1rem;
-        img {
-            max-width: 150px;
-            margin: 6% auto 0;
-            @media #{$media-l} {
-                max-width: 200px;
-            }
-        }
+        width: 97.5%;
+        margin: 0 auto 2rem;
+        padding: 0;
     }
     @media only screen and (min-width: 45em) {
         display: flex;
@@ -314,7 +306,6 @@ section.flip-layout aside.content {
         div {
             display: flex;
             width: 100%;
-            padding-bottom: .75rem;
             flex-flow: column;
             align-items: center;  
             margin-bottom: 0;
@@ -358,7 +349,6 @@ table {
 // Flip
 
 .flip-container {
-	perspective: 1000;
 }
 
 .flipper {
@@ -382,6 +372,11 @@ table {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     background-color: $lightgrey;
+    position: absolute;
+    top: 0;
+	left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .back {
@@ -393,17 +388,6 @@ table {
 	left: 0;
     right: 0;
     bottom: 0;
-}
-
-.back h5 {
-    margin-top: 1rem;
-}
-
-.back .bottom {
-    position: absolute;
-    bottom: 5%;
-    left: 0;
-    right: 0;
 }
 
 .front {
