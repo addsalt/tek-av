@@ -246,16 +246,19 @@
             </div>
 
             <div id="i-2" class="carousel-item item-2">
+
+
+
                 <section class="flip-layout">
                     <aside class="media">
-                        <div class="slider" id="slider">
+                        <div class="slider" id="slider-2">
                             <div class="holder">
                                 <div class="slide" id="slide-0"></div>
                                 <div class="slide" id="slide-1"></div>
                                 <div class="slide" id="slide-2"></div>
                             </div>
                         </div>
-                        <nav class="slider-nav" id="slider-nav">
+                        <nav class="slider-nav" id="slider-nav-2">
                             <a href="#slide-0">Slide 0</a> 
                             <a href="#slide-1">Slide 1</a> 
                             <a href="#slide-2">Slide 2</a> 
@@ -270,19 +273,22 @@
                 </section>
                 <a class="arrow arrow-left" href="#target-item-1">Prev project</a>
                 <a class="arrow arrow-right" href="#target-item-3">Next project</a>
+
+
+
             </div>
 
             <div id="i-3" class="carousel-item item-3">
                 <section>
                     <aside class="media">
-                        <div class="slider" id="slider">
+                        <div class="slider" id="slider-3">
                             <div class="holder">
                                 <div class="slide" id="slide-0"></div>
                                 <div class="slide" id="slide-1"></div>
                                 <div class="slide" id="slide-2"></div>
                             </div>
                         </div>
-                        <nav class="slider-nav" id="slider-nav">
+                        <nav class="slider-nav" id="slider-nav-3">
                             <a href="#slide-0">Slide 0</a> 
                             <a href="#slide-1">Slide 1</a> 
                             <a href="#slide-2">Slide 2</a> 
@@ -404,11 +410,17 @@
     <script src="js/toggle.js"></script>
     <script>
         $(function(){
-        $('#slider-nav a').click(function () {
-            $('#slider-nav a').css('background-color', 'transparent');
-         $(this).css('background-color', 'orange');
-         });
-     });
+
+            $('#slider-nav a').click(function () {
+
+                $('#slider-nav a').css('background-color', 'transparent');
+                $(this).css('background-color', 'orange');
+
+            });
+
+            $('#slider-nav > a:first-child').css('background-color', 'orange');
+
+        });
     </script>
     <!-- classie.js by @desandro: https://github.com/desandro/classie -->
 		<script src="js/classie.js"></script>
@@ -420,6 +432,7 @@
     </script>
     <script src="js/cssParser.js"></script>
     <script src="js/css-filters-polyfill.js"></script>
+    <script src="js/work-slider.js"></script>
 
     <script>
         $(function() {
