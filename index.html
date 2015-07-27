@@ -50,31 +50,45 @@
         
         <!-- About Us -->
         <div id="about-us">
-            <div class="local-service">
-                <h2>Local service</br>we'd want for</br>ourselves.</h2>
-                <p>We are an Ottawa-based contracting service specializing in the installation of home comfort, entertainment and technology. Whether you are fitting your new home, retrofitting your old home, or setting up your new business, Tek-AV can help.</p>
+            <div class="about-holder">
+                <div class="floater local-service">
+                    <div class="p-holder">
+                        <h2>Local service</br>we'd want for</br>ourselves.</h2>
+                        <p>We are an Ottawa-based contracting service specializing in the installation of home comfort, entertainment and technology. Whether you are fitting your new home, retrofitting your old home, or setting up your new business, Tek-AV can help.</p>
+                    </div>
+                </div>
             </div>
-            <div class="dream-setup">
-                <h2>Achieve your</br>dream setup.</h2>
-                <p>Every client’s needs are different and we want you to access our services on your terms. We provide client tailored solutions, performing installation, troubleshooting, tutorials and remote programming for both residential and commercial clients in audio, video and networking.</p>
+            <div class="about-holder">
+                <div class="floater dream-setup">
+                    <div class="p-holder">
+                        <h2>Achieve your</br>dream setup.</h2>
+                        <p>Every client’s needs are different and we want you to access our services on your terms. We provide client tailored solutions, performing installation, troubleshooting, tutorials and remote programming for both residential and commercial clients in audio, video and networking.</p>
+                    </div>
+                </div>
             </div>
-            <div class="crafted">
-                <h2>Custom-crafted</br>expertise.</h2>
-                <p>As local business-owners, we believe if we succeed, a part of the community succeeds. We work with trusted licensed electricians and trades people, and will make any referrals required to complete your vision right and on time.</p>
+            <div class="about-holder">
+                <div class="floater crafted">
+                    <div class="p-holder">
+                        <h2>Custom-crafted</br>expertise.</h2>
+                        <p>As local business-owners, we believe if we succeed, a part of the community succeeds. We work with trusted licensed electricians and trades people, and will make any referrals required to complete your vision right and on time.</p>
+                    </div>
+                </div>
             </div>
         </div>
         
         <!-- Services -->
-        <section id="services" class="wide-holder">
+        <section id="services">
             <h1>Our Services.</h1>
-            <div class="three-col flip-container" id="flipHolder" ontouchstart="this.classList.toggle('hover');">
+            <div class="flip-container" id="flipHolder" ontouchstart="this.classList.toggle('hover');">
                 <div class="flipper" id="flipper-1">
                     <div class="front" id="front-1">
                         <div class="front-content">
                             <p class="number">01.</p>
-                            <h2>Audio.</h2>
-                            <p class="slogan">Get your groove on.</p>
-                            <p class="small-p medium">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.</p>
+                            <div class="flipper-content">
+                                <h2>Audio.</h2>
+                                <p class="slogan">Groove on.</p>
+                                <p class="small-p medium">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.</p>
+                            </div>
                             <div class="flip-btn">
                                 <a>See more</a>
                             </div>
@@ -107,9 +121,11 @@
                     <div class="front" id="front-2">
                         <div class="front-content">
                             <p class="number">02.</p>
-                            <h2>Video.</h2>
-                            <p class="slogan">You provide the popcorn.</p>
-                            <p class="small-p medium">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.</p>
+                            <div class="flipper-content">
+                                <h2>Video.</h2>
+                                <p class="slogan">Add popcorn.</p>
+                                <p class="small-p medium">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.</p>
+                            </div>
                             <div class="flip-btn">
                                 <a>See more</a>
                             </div>
@@ -142,9 +158,11 @@
                     <div class="front" id="front-3">
                         <div class="front-content">
                             <p class="number">03.</p>
-                            <h2>Networking.</h2>
-                            <p class="slogan">Stay connected.</p>
-                            <p class="small-p medium">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.</p>
+                            <div class="flipper-content">
+                                <h2>Network.</h2>
+                                <p class="slogan">Stay connected.</p>
+                                <p class="small-p medium">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.</p>
+                            </div>
                             <div class="flip-btn">
                                 <a>See more</a>
                             </div>
@@ -184,7 +202,7 @@
             
             <div class="you-name-it">
                 <p class="black">You name it.</p>
-                <p>If it's audio or video, we can do it,</br>and we can do it well.</p>
+                <p class="we-can">If it's audio or video, we can do it, and we can do it well.</p>
             </div>
             
             <ul class="mini-cards">
@@ -229,104 +247,106 @@
         </section>
 
         <!-- Our Work -->
-        <h1 id="our-work" class="h4-kerned">See some of our</br>latest work.</h1>
-        
-        <div class="carousel-wrapper">
-            <span id="target-item-1"></span>
-            <span id="target-item-2"></span>
-            <span id="target-item-3"></span>
+        <div id="our-work">
+            <h1 class="h4-kerned">See some of our</br>latest work.</h1>
 
-            <div id="i-1" class="carousel-item item-1">
-                <section>
-                    <aside class="media">
-                        <div class="slider" id="slider">
-                            <div class="holder">
-                                <div class="slide" id="slide-0"></div>
-                                <div class="slide" id="slide-1"></div>
-                                <div class="slide" id="slide-2"></div>
-                            </div>
-                        </div>
-                        <nav class="slider-nav" id="slider-nav">
-                            <a href="#slide-0">Slide 0</a> 
-                            <a href="#slide-1">Slide 1</a> 
-                            <a href="#slide-2">Slide 2</a> 
-                        </nav>
-                    </aside>
-                    <aside class="content">
-                        <div>
-                            <h3>Project 1</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                            <h4>The details</h4>
-                            <ul>
-                                <li>Sed posuere consectetur est at lobortis.</li>
-                                <li>Praesent commodo cursus magna.</li>
-                                <li>Vel scelerisque nisl consectetur.</li>
-                            </ul>
-                        </div>
-                    </aside>
-                </section>
-                <a class="arrow arrow-left" href="#target-item-3">Prev project</a>
-                <a class="arrow arrow-right" href="#target-item-2">Next project</a>
-            </div>
+            <div class="carousel-wrapper">
+                <span id="target-item-1"></span>
+                <span id="target-item-2"></span>
+                <span id="target-item-3"></span>
 
-            <div id="i-2" class="carousel-item item-2">
-                <section class="flip-layout">
-                    <aside class="media">
-                        <div class="slider" id="slider">
-                            <div class="holder">
-                                <div class="slide" id="slide-0"></div>
-                                <div class="slide" id="slide-1"></div>
-                                <div class="slide" id="slide-2"></div>
+                <div id="i-1" class="carousel-item item-1">
+                    <section>
+                        <aside class="media">
+                            <div class="slider" id="slider">
+                                <div class="holder">
+                                    <div class="slide" id="slide-0"></div>
+                                    <div class="slide" id="slide-1"></div>
+                                    <div class="slide" id="slide-2"></div>
+                                </div>
                             </div>
-                        </div>
-                        <nav class="slider-nav" id="slider-nav">
-                            <a href="#slide-0">Slide 0</a> 
-                            <a href="#slide-1">Slide 1</a> 
-                            <a href="#slide-2">Slide 2</a> 
-                        </nav>
-                    </aside>
-                    <aside class="content">
-                        <div>
-                            <h3>Project 2</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                        </div>
-                    </aside>
-                </section>
-                <a class="arrow arrow-left" href="#target-item-1">Prev project</a>
-                <a class="arrow arrow-right" href="#target-item-3">Next project</a>
-            </div>
+                            <nav class="slider-nav" id="slider-nav">
+                                <a href="#slide-0">Slide 0</a> 
+                                <a href="#slide-1">Slide 1</a> 
+                                <a href="#slide-2">Slide 2</a> 
+                            </nav>
+                        </aside>
+                        <aside class="content">
+                            <div>
+                                <h3>Project 1</h3>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                <h4>The details</h4>
+                                <ul>
+                                    <li>Sed posuere consectetur est at lobortis.</li>
+                                    <li>Praesent commodo cursus magna.</li>
+                                    <li>Vel scelerisque nisl consectetur.</li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
+                    <a class="arrow arrow-left" href="#target-item-3">Prev project</a>
+                    <a class="arrow arrow-right" href="#target-item-2">Next project</a>
+                </div>
 
-            <div id="i-3" class="carousel-item item-3">
-                <section>
-                    <aside class="media">
-                        <div class="slider" id="slider">
-                            <div class="holder">
-                                <div class="slide" id="slide-0"></div>
-                                <div class="slide" id="slide-1"></div>
-                                <div class="slide" id="slide-2"></div>
+                <div id="i-2" class="carousel-item item-2">
+                    <section class="flip-layout">
+                        <aside class="media">
+                            <div class="slider" id="slider">
+                                <div class="holder">
+                                    <div class="slide" id="slide-0"></div>
+                                    <div class="slide" id="slide-1"></div>
+                                    <div class="slide" id="slide-2"></div>
+                                </div>
                             </div>
-                        </div>
-                        <nav class="slider-nav" id="slider-nav">
-                            <a href="#slide-0">Slide 0</a> 
-                            <a href="#slide-1">Slide 1</a> 
-                            <a href="#slide-2">Slide 2</a> 
-                        </nav>
-                    </aside>
-                    <aside class="content">
-                        <div>
-                            <h3>Project 3</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                            <h4>The solution</h4>
-                            <ul>
-                                <li>Sed posuere consectetur est at lobortis.</li>
-                                <li>Praesent commodo cursus magna.</li>
-                                <li>Vel scelerisque nisl consectetur et</li>
-                            </ul>
-                        </div>
-                    </aside>
-                </section>
-                <a class="arrow arrow-left" href="#target-item-2">Prev project</a>
-                <a class="arrow arrow-right" href="#target-item-1">Next project</a>
+                            <nav class="slider-nav" id="slider-nav">
+                                <a href="#slide-0">Slide 0</a> 
+                                <a href="#slide-1">Slide 1</a> 
+                                <a href="#slide-2">Slide 2</a> 
+                            </nav>
+                        </aside>
+                        <aside class="content">
+                            <div>
+                                <h3>Project 2</h3>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                            </div>
+                        </aside>
+                    </section>
+                    <a class="arrow arrow-left" href="#target-item-1">Prev project</a>
+                    <a class="arrow arrow-right" href="#target-item-3">Next project</a>
+                </div>
+
+                <div id="i-3" class="carousel-item item-3">
+                    <section>
+                        <aside class="media">
+                            <div class="slider" id="slider">
+                                <div class="holder">
+                                    <div class="slide" id="slide-0"></div>
+                                    <div class="slide" id="slide-1"></div>
+                                    <div class="slide" id="slide-2"></div>
+                                </div>
+                            </div>
+                            <nav class="slider-nav" id="slider-nav">
+                                <a href="#slide-0">Slide 0</a> 
+                                <a href="#slide-1">Slide 1</a> 
+                                <a href="#slide-2">Slide 2</a> 
+                            </nav>
+                        </aside>
+                        <aside class="content">
+                            <div>
+                                <h3>Project 3</h3>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                <h4>The solution</h4>
+                                <ul>
+                                    <li>Sed posuere consectetur est at lobortis.</li>
+                                    <li>Praesent commodo cursus magna.</li>
+                                    <li>Vel scelerisque nisl consectetur et</li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </section>
+                    <a class="arrow arrow-left" href="#target-item-2">Prev project</a>
+                    <a class="arrow arrow-right" href="#target-item-1">Next project</a>
+                </div>
             </div>
         </div>
 
@@ -362,7 +382,7 @@
         <button class="md-trigger btn trigger-btn" data-modal="modal-1">Get a custom quote</button>
         <p class="prefer">Prefer to chat in person?</p>
         <p class="contact-blurb">Email <a href="https://www.linkedin.com/pub/keith-macdougall/48/430/332">Keith</a> at <a href="#">start@tek-av.ca</a> or call <a href="#">613-123-1234</a></p>
-        <ul class="nav-sm push-top-1 inline-block">
+        <ul class="sm-link">
             <li><a href="#">Facebook</a></li>
             <li><a href="#">Instagram</a></li>
         </ul>
