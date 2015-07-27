@@ -316,6 +316,7 @@ header {
                     letter-spacing: 0.02em;
                     display: inline-block;
                     padding-top: .9rem;
+                    color: $white;
                     margin: 0;
                     margin-top: -4px;
                     border-top: 4px solid $text;
@@ -325,6 +326,8 @@ header {
                     letter-spacing: 0.2em;
                     line-height: 1;
                     margin: 0;
+                    color: $white;
+                    font-weight: 700;
                     .font_small {
                         color: $text;
                         font-weight: 500;
@@ -568,6 +571,16 @@ header {
     padding: 7.75rem 7%;
     h1 {
         margin-top: 0;
+    }
+    .content {
+        background-color: $charcoal;
+        color: $lightgrey;
+        text-transform: none;
+        text-align: left;
+        h3, h4 {
+            font-weight: 900;
+            color: $white;
+        }
     }
 }
 
