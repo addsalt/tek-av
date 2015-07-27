@@ -284,15 +284,6 @@ section.flip-layout aside.content {
 
 // Three Column
 
-.wide-holder {
-    background-color: $charcoal;
-    color: $white;
-    padding: 2%;
-    @media #{$media-l} {
-        padding: 10%;
-    }
-}
-
 .three-col{
     div {
         width: 97.5%;
@@ -435,8 +426,8 @@ table {
 
 .logos ul li {
     display: inline-block;
-    width: 100px;
-    margin: 0 5px;
+    width: 4.8125rem;
+    margin: 0 .3125em;
 }
 
 // Form
