@@ -13,6 +13,12 @@ $(document).ready(function(){
 		mouseDrag: false
 	});
 
+	$("#testimonials .slider .holder").owlCarousel({
+		singleItem : true,
+		theme : 'testimonials-theme',
+		mouseDrag: false
+	});
+
 	$('#projects .projects-carousel-item aside.media').each(function(){
 
 		var slider = {
@@ -31,7 +37,6 @@ $(document).ready(function(){
 			},
 
 			timing: 800,
-			// slideWidth: $(this).find('.slider').width(), // could measure this
 
 			/* methods */
 
@@ -51,13 +56,14 @@ $(document).ready(function(){
 
 			handleNavClick: function(event, el) {
 
+				slideWidth = $('.slider').width();
+
 				event.preventDefault();
 
 				var position = $(el).data("order");
-				var width = $(this).find('.slider').width();
 
 				this.el.slider.animate({
-					scrollLeft: position * width
+					scrollLeft: position * slideWidth
 				}, this.timing);
 
 				this.changeActiveNav(el);
