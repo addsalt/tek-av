@@ -6,6 +6,7 @@
 	<meta name="mobileoptimized" content="240">
 	<meta name="viewport" content="width=device-width,intial-scale=1">
 	<meta name="description" content="La web personal de Mariella Ackermann Menacho">
+    <link href="css/owl.carousel.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<title>Tek-AV · Audio and Video Expertise</title>
     <script src="js/modernizr.custom.js"></script>
@@ -207,12 +208,12 @@
         <!-- Our Work -->
         <h1 id="our-work" class="dos">See some of our latest work</h1>
         
-        <div class="carousel-wrapper">
-            <span id="target-item-1"></span>
+        <div id="projects" class="carousel-wrapper">
+           <!--  <span id="target-item-1"></span>
             <span id="target-item-2"></span>
             <span id="target-item-3"></span>
-
-            <div id="i-1" class="carousel-item item-1">
+ -->
+            <div id="i-1" class="projects-carousel-item item-1">
                 <section>
                     <aside class="media">
                         <div class="slider" id="slider">
@@ -241,11 +242,11 @@
                         </div>
                     </aside>
                 </section>
-                <a class="arrow arrow-left" href="#target-item-3">Prev project</a>
-                <a class="arrow arrow-right" href="#target-item-2">Next project</a>
+               <!--  <a class="arrow arrow-left" href="#target-item-3">Prev project</a>
+                <a class="arrow arrow-right" href="#target-item-2">Next project</a> -->
             </div>
 
-            <div id="i-2" class="carousel-item item-2">
+            <div id="i-2" class="projects-carousel-item item-2">
 
 
 
@@ -271,14 +272,14 @@
                         </div>
                     </aside>
                 </section>
-                <a class="arrow arrow-left" href="#target-item-1">Prev project</a>
+           <!--      <a class="arrow arrow-left" href="#target-item-1">Prev project</a>
                 <a class="arrow arrow-right" href="#target-item-3">Next project</a>
 
-
+ -->
 
             </div>
 
-            <div id="i-3" class="carousel-item item-3">
+            <div id="i-3" class="projects-carousel-item item-3">
                 <section>
                     <aside class="media">
                         <div class="slider" id="slider-3">
@@ -306,9 +307,9 @@
                             </ul>
                         </div>
                     </aside>
-                </section>
+                </section><!-- 
                 <a class="arrow arrow-left" href="#target-item-2">Prev project</a>
-                <a class="arrow arrow-right" href="#target-item-1">Next project</a>
+                <a class="arrow arrow-right" href="#target-item-1">Next project</a> -->
             </div>
         </div>
 
@@ -432,7 +433,8 @@
     </script>
     <script src="js/cssParser.js"></script>
     <script src="js/css-filters-polyfill.js"></script>
-    <script src="js/work-slider.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/project-area.js"></script>
 
     <script>
         $(function() {
