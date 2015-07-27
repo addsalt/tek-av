@@ -108,7 +108,7 @@ button, input, select, textarea {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	color: $dark;
+	color: $charcoal;
 	padding: 0.25em 0;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -130,5 +130,5 @@ button, input, select, textarea {
 .input__field--yoshiko:focus + .input__field--yoshiko,
 .input--filled .input__field--yoshiko {
 	background-color: transparent;
-	border-color: $spot;
+	border-color: $red;
 }

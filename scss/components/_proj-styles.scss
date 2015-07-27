@@ -1,12 +1,39 @@
 // Project-Specific Styles
 
+/*#header {
+    height: 6.5625rem;
+}*/
+
+.nav a, 
+.nav a:link,
+.nav a:visited{
+    font-size: .85rem;
+    letter-spacing: 0.06em;
+}
+
 #intro {
-    background: $lightgrey;
-    padding: 2%;
+    background: $white; 
+    padding: 7%;
     padding-top: 50px;
     padding-bottom: 2rem;
+    h1 {
+        letter-spacing: 0.01em;
+        line-height: 1.333333333;
+        .tagline {
+            letter-spacing: 0.275em;
+            color: $lightgrey;
+        }
+        .done-right {
+            letter-spacing: 0.275em;
+            color: $red;
+        }
+    }
     @media #{$media-m} { 
         padding: calc(50px + 5%) 35% 5% 15%;
+        h1 {
+            max-width: 39rem;
+            
+        }
     }
 }
 
@@ -16,9 +43,37 @@
 }
 
 #about-us {
-    padding: 2%;
+    padding: 7%;
+    background-color: $charcoal;
+    color: $white;
     @media #{$media-m} { 
         padding: 5% 15%;
+    }
+    h2 {
+        text-transform: none;
+        line-height: 1;
+        color: $white;
+        font-size: 2.25rem;
+        border-top: 6px solid white;
+        padding-top: 30px;
+        display: inline-block;
+        letter-spacing: 0.0025em;
+    }
+    h2.local-service {
+        border-top: 6px solid $red;
+    }
+    h2.dream-setup {
+        border-top: 6px solid $yellow;
+    }
+    h2.crafted {
+        border-top: 6px solid $blue;
+    }
+    p {
+        letter-spacing: 0.3em;
+        font-weight: 500;
+        line-height: 2;
+        font-size: .75rem;
+        color: $lightgrey;
     }
 }
 
@@ -46,6 +101,18 @@
 #services {
     text-align: center;
     padding-top: 3rem;
+    background-color: $white;
+    h2 {
+        color: $white;
+        line-height: .1;
+        color: $white;
+        letter-spacing: 0.02;
+    }
+    .slogan {
+        letter-spacing: 0.2em;
+        color: $white;
+        font-weight: 700;
+    }
 }
 
 .two-split, .logos {
@@ -85,4 +152,29 @@ dl {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+}
+
+.flipper {
+    text-align: left;
+}
+
+#flipper-1 .front {
+    background-color: $boxred;
+}
+
+#flipper-2 .front {
+    background-color: $boxyellow;
+}
+
+#flipper-3 .front {
+    background-color: $boxblue;
+}
+
+.mini-cards{
+    h5 {
+        font-size: .75rem;
+        line-height: 1.333333333;
+        color: $charcoal;
+        letter-spacing: 0.3em;
+    }
 }
