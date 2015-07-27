@@ -6,7 +6,7 @@
     color: $lightgrey;
     letter-spacing: 0.3em;
     margin-top: 0;
-    font-weight: 300;
+    font-weight: 700;
 }
 
 header {
@@ -59,7 +59,10 @@ header {
     padding: 7%;
     padding-top: calc(6.25rem + 5%);
     @media #{$media-m} {
-        padding: calc(50px + 5%) 10% 5%;
+        padding: calc(50px + 7.25rem) 10% 5%;
+    }
+    @media #{$media-l} {
+        padding: calc(50px + 12rem) 10% 15rem;
     }
     h1 {
         letter-spacing: 0.01em;
@@ -239,7 +242,7 @@ header {
                 letter-spacing: 0.3em;
                 color: $white;
                 font-weight: 700;
-                padding: .6875rem 0;
+                padding: .35rem 0;
             }
             .sell-item {
                 list-style-type: none;
@@ -482,5 +485,63 @@ footer {
         font-size: 1.6rem;
         line-height: 1.2;
         color: $white;
+        font-weight: 900;
+        letter-spacing: 0.01em;
+        margin-top: 0;
+    }
+    .ready {
+        font-weight: 500;
+        font-size: .75rem;
+        line-height: 1.6667;
+        letter-spacing: 0.3em;
+        color: $lightgrey;
+        max-width: 26.875rem;
+        margin: 1.35rem auto 1.5rem;
+    }
+    .trigger-btn {
+        background-color: transparent;
+        color: $red;
+        border: solid 2px $red;
+        outline: none;
+        box-shadow: none;
+        border-radius: 5px;
+        font-size: .6875rem;
+        line-height: 1.6667;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        padding: .35rem 4.75rem .4rem;
+        margin: 1rem 0 4rem;
+    }
+    .prefer {
+        text-transform: none;
+        font-size: 1rem;
+        line-height: 1.25;
+        letter-spacing: 0.01em;
+        color: $white;
+        font-weight: 900;
+    }
+    .contact-blurb, .copyright {
+        font-size:  .75rem;
+        letter-spacing: 0.3em;
+        line-height: 1.25;
+        color: $lightgrey;
+        font-weight: 500;
+        a {
+            color: $red;
+        }
+    }
+    .copyright {
+        font-size: .625rem;
+        li {
+            display: block;
+            @media #{$media-m} {
+                display: inline-block;
+                &:first-child {
+                    border-right: solid 1px $lightgrey;
+                    padding-right: .5rem;
+                }
+            }
+        }
     }
 }

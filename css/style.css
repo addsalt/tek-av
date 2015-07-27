@@ -1163,7 +1163,7 @@ a.cta-btn-m {
     display: inline-block;
     position: absolute;
     right: 235px;
-    top: 0;
+    bottom: 6px;
   }
 }
 
@@ -1213,7 +1213,7 @@ a.cta-btn-m {
     display: inline-block;
     position: absolute;
     right: 140px;
-    top: 6px;
+    bottom: 6px;
   }
   .nav ul li {
     display: inline-block;
@@ -1258,6 +1258,10 @@ body {
   -moz-font-feature-settings: "kern";
   -moz-font-feature-settings: "kern=1";
   text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 
 p {
@@ -1814,7 +1818,7 @@ button, input, select, textarea {
   color: #b4b4b4;
   letter-spacing: 0.3em;
   margin-top: 0;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 header {
@@ -1874,8 +1878,15 @@ header .nav-btn:visited {
 
 @media only screen and (min-width: 38em) {
   #intro {
-    padding: -webkit-calc(50px + 5%) 10% 5%;
-    padding: calc(50px + 5%) 10% 5%;
+    padding: -webkit-calc(50px + 7.25rem) 10% 5%;
+    padding: calc(50px + 7.25rem) 10% 5%;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  #intro {
+    padding: -webkit-calc(50px + 12rem) 10% 15rem;
+    padding: calc(50px + 12rem) 10% 15rem;
   }
 }
 
@@ -2099,7 +2110,7 @@ header .nav-btn:visited {
   letter-spacing: 0.3em;
   color: #fff;
   font-weight: 700;
-  padding: .6875rem 0;
+  padding: .35rem 0;
 }
 
 #services .flipper .back .sell-item {
@@ -2393,4 +2404,72 @@ footer h2 {
   font-size: 1.6rem;
   line-height: 1.2;
   color: #fff;
+  font-weight: 900;
+  letter-spacing: 0.01em;
+  margin-top: 0;
+}
+
+footer .ready {
+  font-weight: 500;
+  font-size: .75rem;
+  line-height: 1.6667;
+  letter-spacing: 0.3em;
+  color: #b4b4b4;
+  max-width: 26.875rem;
+  margin: 1.35rem auto 1.5rem;
+}
+
+footer .trigger-btn {
+  background-color: transparent;
+  color: #c1836d;
+  border: solid 2px #c1836d;
+  outline: none;
+  box-shadow: none;
+  border-radius: 5px;
+  font-size: .6875rem;
+  line-height: 1.6667;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  padding: 0.35rem 4.75rem 0.4rem;
+  margin: 1rem 0 4rem;
+}
+
+footer .prefer {
+  text-transform: none;
+  font-size: 1rem;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #fff;
+  font-weight: 900;
+}
+
+footer .contact-blurb, footer .copyright {
+  font-size: .75rem;
+  letter-spacing: 0.3em;
+  line-height: 1.25;
+  color: #b4b4b4;
+  font-weight: 500;
+}
+
+footer .contact-blurb a, footer .copyright a {
+  color: #c1836d;
+}
+
+footer .copyright {
+  font-size: .625rem;
+}
+
+footer .copyright li {
+  display: block;
+}
+
+@media only screen and (min-width: 38em) {
+  footer .copyright li {
+    display: inline-block;
+  }
+  footer .copyright li:first-child {
+    border-right: solid 1px #b4b4b4;
+    padding-right: .5rem;
+  }
 }
