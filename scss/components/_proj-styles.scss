@@ -15,6 +15,7 @@ header {
     height: 6.25rem;
     border-bottom: 1px solid #d9d9d9;
     width: 86%;
+    max-width: 106rem;
     margin: 0 auto;
     background-color: transparent;
     .small-logo {
@@ -62,10 +63,10 @@ header {
     padding-top: calc(6.25rem + 5%);
     position: relative;
     @media #{$media-m} {
-        padding: calc(50px + 7.25rem) 10% 5%;
+        padding: calc(50px + 7.25rem) 7% 5%;
     }
     @media #{$media-l} {
-        padding: calc(50px + 12rem) 10% 15rem;
+        padding: calc(50px + 12rem) 7% 15rem;
         background-image: url(../../images/intrp-box.jpg);
         background-size: 1000px;
         background-repeat: no-repeat;
@@ -103,6 +104,11 @@ header {
     background-size: cover;
 }
 
+.max-width {
+    max-width: 106rem;
+    margin: 0 auto;
+}
+
 #about-us {
     z-index: 2;
     padding: 7.75rem 7%;
@@ -126,7 +132,9 @@ header {
         @media #{$media-l} {
             position: absolute;
             top: 0;
-            left: -8rem;
+            left: calc(-14% + -2.5rem);
+        }
+        @media only screen and (min-width: 93.75em) {
         }
     }
     .floater {
@@ -134,10 +142,11 @@ header {
         padding: 1rem;
         @media #{$media-l} {
             display: block;
-            width: calc(93% - 8rem);
+            width: 86%;
             margin: 0 auto;
+            margin-left: 14%;
             overflow: visible;
-            padding-right: 5%;
+            padding-right: 4rem;
         }
     }
     .p-holder {
@@ -223,7 +232,7 @@ header {
 
 #services {
     text-align: center;
-    padding: 7.75rem 0 0;
+    padding: 7.75rem 0;
     background-color: $white;
     h1 {
         font-weight: 700;
@@ -232,11 +241,9 @@ header {
         letter-spacing: 0.3em;
         margin-top: 0;
         line-height: 1;
+        padding-left: 7%;
+        padding-right: 7%;
         margin-bottom: 3.875rem;
-    }
-    .flip-container {
-        max-width: 118rem;
-        margin: 0 auto;
     }
     .flipper {
         position: relative;
@@ -439,7 +446,7 @@ header {
         }
     }
     .you-name-it {
-        width: 90%;
+        width: 86%;
         margin: 3.5rem auto 0;
         padding-bottom: 2.25rem;
         color: $lightgrey;
@@ -465,6 +472,8 @@ header {
         }
     }
     .mini-cards {
+        width: 86%;
+        padding-top: 3rem;
         text-align: center;
         margin-bottom: 7.25rem;
         h5 {

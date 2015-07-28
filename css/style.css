@@ -893,6 +893,9 @@ section aside.content div ul {
 
 .flip-container {
   padding: 0;
+  width: 86%;
+  max-width: 106rem;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 70em) {
@@ -905,7 +908,6 @@ section aside.content div ul {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding: 0 5%;
   }
 }
 
@@ -1893,6 +1895,7 @@ header {
   height: 6.25rem;
   border-bottom: 1px solid #d9d9d9;
   width: 86%;
+  max-width: 106rem;
   margin: 0 auto;
   background-color: transparent;
 }
@@ -1947,15 +1950,15 @@ header .nav-btn:visited {
 
 @media only screen and (min-width: 38em) {
   #intro {
-    padding: -webkit-calc(50px + 7.25rem) 10% 5%;
-    padding: calc(50px + 7.25rem) 10% 5%;
+    padding: -webkit-calc(50px + 7.25rem) 7% 5%;
+    padding: calc(50px + 7.25rem) 7% 5%;
   }
 }
 
 @media only screen and (min-width: 60em) {
   #intro {
-    padding: -webkit-calc(50px + 12rem) 10% 15rem;
-    padding: calc(50px + 12rem) 10% 15rem;
+    padding: -webkit-calc(50px + 12rem) 7% 15rem;
+    padding: calc(50px + 12rem) 7% 15rem;
     background-image: url(../../images/intrp-box.jpg);
     background-size: 1000px;
     background-repeat: no-repeat;
@@ -2006,6 +2009,11 @@ header .nav-btn:visited {
   background-size: cover;
 }
 
+.max-width {
+  max-width: 106rem;
+  margin: 0 auto;
+}
+
 #about-us {
   z-index: 2;
   padding: 7.75rem 7%;
@@ -2038,7 +2046,8 @@ header .nav-btn:visited {
   #about-us h2 {
     position: absolute;
     top: 0;
-    left: -8rem;
+    left: -webkit-calc(-14% + -2.5rem);
+    left: calc(-14% + -2.5rem);
   }
 }
 
@@ -2050,11 +2059,11 @@ header .nav-btn:visited {
 @media only screen and (min-width: 60em) {
   #about-us .floater {
     display: block;
-    width: -webkit-calc(93% - 8rem);
-    width: calc(93% - 8rem);
+    width: 86%;
     margin: 0 auto;
+    margin-left: 14%;
     overflow: visible;
-    padding-right: 5%;
+    padding-right: 4rem;
   }
 }
 
@@ -2156,7 +2165,7 @@ header .nav-btn:visited {
 
 #services {
   text-align: center;
-  padding: 7.75rem 0 0;
+  padding: 7.75rem 0;
   background-color: #fff;
 }
 
@@ -2167,12 +2176,9 @@ header .nav-btn:visited {
   letter-spacing: 0.3em;
   margin-top: 0;
   line-height: 1;
+  padding-left: 7%;
+  padding-right: 7%;
   margin-bottom: 3.875rem;
-}
-
-#services .flip-container {
-  max-width: 118rem;
-  margin: 0 auto;
 }
 
 #services .flipper {
@@ -2434,7 +2440,7 @@ header .nav-btn:visited {
 }
 
 #services .you-name-it {
-  width: 90%;
+  width: 86%;
   margin: 3.5rem auto 0;
   padding-bottom: 2.25rem;
   color: #b4b4b4;
@@ -2465,6 +2471,8 @@ header .nav-btn:visited {
 }
 
 #services .mini-cards {
+  width: 86%;
+  padding-top: 3rem;
   text-align: center;
   margin-bottom: 7.25rem;
 }

@@ -307,10 +307,12 @@ section.flip-layout aside.content {
 
 .flip-container {
     padding: 0;
+    width: 86%;
+    max-width: 106rem;
+    margin: 0 auto;
     @media only screen and (min-width: 70em) {
         justify-content: space-between;
         display: flex;
-        padding: 0 5%;
     }
 }
 
