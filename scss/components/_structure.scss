@@ -204,7 +204,7 @@ section.flip-layout aside.content {
 // Mini-Slider
 
 .slider {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -220,14 +220,14 @@ section.flip-layout aside.content {
     height: 100%;
 }
 
-.slide>.caption {
+/*.slide>.caption {
     position: absolute;
     bottom: 0rem;
     left: 1rem;
     color: white;
     font-style: italic;
     width: 70%;
-}
+}*/
 
 .slide {
     float: left;
@@ -235,16 +235,20 @@ section.flip-layout aside.content {
     height: 100%;
 }
 
-.slide:after {
-    content: '';
+.slide:after,
+.slide > .caption {
     position: absolute;
     color: $white;
-    z-index: 7;
     bottom: .85rem;
     left: 1rem;
     width: 70%;
     font-size: 0.85em;
     font-style: italic;
+}
+
+.slide:after {
+    content: '';
+    z-index: 7;
 }
 
 .slider-nav {
@@ -280,6 +284,7 @@ section.flip-layout aside.content {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 // Three Column
@@ -460,7 +465,7 @@ table {
     width: 100%;
     background-color: grey;
     .slider {
-        display: table-cell;
+        //display: table-cell;
         text-align: center;
         position: relative;
         width: 100%;

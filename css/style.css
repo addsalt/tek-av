@@ -783,7 +783,7 @@ section aside.content div ul {
 }
 
 .slider {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -799,31 +799,34 @@ section aside.content div ul {
   height: 100%;
 }
 
-.slide > .caption {
-  position: absolute;
-  bottom: 0rem;
-  left: 1rem;
-  color: white;
-  font-style: italic;
-  width: 70%;
-}
-
+/*.slide>.caption {
+    position: absolute;
+    bottom: 0rem;
+    left: 1rem;
+    color: white;
+    font-style: italic;
+    width: 70%;
+}*/
 .slide {
   float: left;
   width: 33.333333%;
   height: 100%;
 }
 
-.slide:after {
-  content: '';
+.slide:after,
+.slide > .caption {
   position: absolute;
   color: #fff;
-  z-index: 7;
   bottom: .85rem;
   left: 1rem;
   width: 70%;
   font-size: 0.85em;
   font-style: italic;
+}
+
+.slide:after {
+  content: '';
+  z-index: 7;
 }
 
 .slider-nav {
@@ -859,6 +862,7 @@ section aside.content div ul {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .three-col div {
@@ -1084,7 +1088,6 @@ table {
 }
 
 #testimonials .slider {
-  display: table-cell;
   text-align: center;
   position: relative;
   width: 100%;
