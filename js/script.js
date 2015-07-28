@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
 	var urlHash = window.location.hash;
+	var slideWidth;
 
 	$("#projects").owlCarousel({
 		singleItem : true,
@@ -10,7 +11,8 @@ $(document).ready(function(){
 		' <a class="arrow arrow-right">Next project</a>'
 		],
 		theme : 'projects-theme',
-		mouseDrag: false
+		mouseDrag: false,
+		slideSpeed: 400
 	});
 
 	$("#testimonials .slider .holder").owlCarousel({
@@ -49,7 +51,7 @@ $(document).ready(function(){
 				allNavButtons: $(this).find(".slider-nav > a")
 			},
 
-			timing: 800,
+			timing: 1000,
 
 			/* methods */
 
@@ -107,6 +109,10 @@ $(document).ready(function(){
         });
 
 		$("#projects").data('owlCarousel').goTo( urlHash.split('-')[1] - 1 );
+
+		// if(urlHash.split('-')[2]){
+			// console.log( "going to slide " + urlHash.split('-')[2] );
+		// }
 	}
 
 });
