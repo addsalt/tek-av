@@ -780,7 +780,7 @@ section aside.content div ul {
 }*/
 .slide {
   float: left;
-  width: 100%;
+  width: 33.333333%;
   height: 100%;
   background-size: cover;
   background-position: 50% 50%;
@@ -788,15 +788,19 @@ section aside.content div ul {
   position: relative;
 }
 
+#testimonials .slide {
+  width: 100%;
+}
+
 .slide:after,
 .slide > .caption {
   position: absolute;
   color: #fff;
-  bottom: .85rem;
-  left: 1rem;
-  width: 70%;
-  font-size: 0.85em;
-  font-style: italic;
+  bottom: 1.75rem;
+  left: 2rem;
+  width: 100%;
+  text-align: left;
+  max-width: 450px;
 }
 
 .slide:after {
@@ -807,8 +811,8 @@ section aside.content div ul {
 .slider-nav {
   text-align: center;
   position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 2rem;
+  right: 2rem;
   display: block;
   z-index: 7;
 }
@@ -820,8 +824,10 @@ section aside.content div ul {
   border: solid 1px white;
   overflow: hidden;
   text-indent: -9999px;
-  border-radius: 50%;
+  border-radius: 3px;
   margin: 8px 0 0;
+  padding: 2px;
+  position: relative;
 }
 
 .slider-nav-test a {
@@ -829,8 +835,14 @@ section aside.content div ul {
   margin: 0 0 0;
 }
 
-.slider-nav a.active {
-  background-color: rgba(255, 255, 255, 0.6);
+.slider-nav a.active:after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 4px;
+  background-color: #6a6a6a;
+  top: 2px;
+  left: 2px;
 }
 
 .three-col div {
@@ -2136,21 +2148,16 @@ header .nav-btn:visited {
   background-color: #b4b4b4;
 }
 
-#slide-0 {
-  background-image: url("http://placehold.it/1400x1400/666666/ffffff");
-  position: relative;
+.slide-0 {
+  background-image: url(../../images/placeholder1.jpg);
 }
 
-#slide-0:after {
-  content: 'Optional caption for each image. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.';
+.slide-1 {
+  background-image: url("http://placehold.it/1400x1400/333333/ffffff");
 }
 
-#slide-1 {
-  background-image: url(http://placehold.it/1400x1400/333333/ffffff);
-}
-
-#slide-2 {
-  background-image: url(http://placehold.it/1400x1400/555555/ffffff);
+.slide-2 {
+  background-image: url("http://placehold.it/1400x1400/555555/ffffff");
 }
 
 #services {
@@ -2588,6 +2595,18 @@ header .nav-btn:visited {
 
 #our-work h1 {
   margin-top: 0;
+  margin-bottom: 2.75rem;
+}
+
+#our-work .caption {
+  font-size: .75rem;
+  line-height: 1.333333333;
+  font-weight: 700;
+  text-transform: none;
+}
+
+#our-work .caption .cap-title {
+  text-transform: uppercase;
 }
 
 #our-work .content {
@@ -2603,6 +2622,19 @@ header .nav-btn:visited {
   font-size: .625rem;
   letter-spacing: 0.1em;
   font-weight: 700;
+}
+
+#our-work .content:after {
+  content: '';
+  background-size: contain;
+  background-color: transparent;
+  background-image: url(../../images/tek-av-icon-red.png);
+  height: 25px;
+  width: 27px;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
 }
 
 #our-work .content h3, #our-work .content h4 {
@@ -2639,6 +2671,27 @@ header .nav-btn:visited {
 
 #our-work .content ul {
   list-style-type: square;
+}
+
+#our-work .project-yellow .content div, #our-work .project-yellow .content h3 {
+  border-color: #edd267;
+}
+
+#our-work .project-blue .content div, #our-work .project-blue .content h3 {
+  border-color: #85a4d8;
+}
+
+#our-work .project-yellow .content:after {
+  background-image: url(../../images/tek-av-icon-yellow.png);
+}
+
+#our-work .project-blue .content:after {
+  background-image: url(../../images/tek-av-icon-blue.png);
+}
+
+section.flip-layout aside.content .numbering {
+  top: 2rem;
+  right: 2rem;
 }
 
 footer {
