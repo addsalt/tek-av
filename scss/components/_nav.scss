@@ -40,6 +40,7 @@ header {
     &:hover {
         background-color: $grey;
     }
+    
 }
 
 .nav-contact a {
@@ -62,7 +63,10 @@ a.cta-btn-m {
         display: inline-block;
         position: absolute;
         right: 235px;
-        bottom: 6px;
+        bottom: 17px;
+    }
+    @media #{$media-l} {
+        bottom: 36px;
     }
 }
 
@@ -92,6 +96,7 @@ a.cta-btn-m {
 .nav a:link,
 .nav a:visited{
     text-decoration: none;
+    color: $lightgrey;
 }
 
 .nav a:hover,
@@ -125,7 +130,7 @@ a.cta-btn-m {
 		display: inline-block;
 		position: absolute;
         right: 140px;
-        bottom: 6px;
+        bottom: 41px;
 	}
 	
 	.nav ul li {

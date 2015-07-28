@@ -7,8 +7,8 @@ $(document).ready(function(){
 		singleItem : true,
 		navigation: true,
 		navigationText: [
-		'<a class="arrow arrow-left">Previous project</a>',
-		' <a class="arrow arrow-right">Next project</a>'
+		'<a class="arrow line-btn arrow-left">Previous project</a>',
+		' <a class="arrow line-btn arrow-right">Next project</a>'
 		],
 		theme : 'projects-theme',
 		mouseDrag: false,

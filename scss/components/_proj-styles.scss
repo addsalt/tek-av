@@ -1,5 +1,19 @@
 // Project-Specific Styles
 
+.line-btn {
+    display: inline-block;
+    border: solid 2px $white;
+    letter-spacing: 0.1em;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    padding: .4rem .65rem .375rem;
+    border-radius: 5px;
+}
+
 .h4-kerned {
     font-size: 1rem;
     line-height: 2;
@@ -12,8 +26,16 @@
 header {
     padding-top: 1rem;
     z-index: 9999;
-    height: 6.25rem;
-    border-bottom: 1px solid #d9d9d9;
+    height: 35px;
+    @media #{$media-m} {
+        height: 2.35rem;
+        margin-top: 75px;
+    }
+    @media #{$media-l} {
+        height: 5rem;
+        margin-top: 100px;
+    }
+    border-bottom: solid 1px #d9d9d9;
     width: 86%;
     max-width: 106rem;
     margin: 0 auto;
@@ -22,16 +44,41 @@ header {
         left: 0;
         bottom: 1rem;
         width: 100px;
+        @media #{$media-m} {
+            bottom: 20px;
+        }
+        @media #{$media-l} {
+            bottom: 41px;
+        }
     }
     .nav-contact-2 {
         bottom: .925rem;
         right: 40px;
         font-size: .6875rem;
-        li a {color: $lightgrey;}
+        @media #{$media-m} {
+            bottom: 20px;
+            right: 47px;
+        }
+        @media #{$media-l} {
+            right: 0px;
+            bottom: 43px;
+        }
+        li a {
+            color: $lightgrey; 
+            letter-spacing: 0.1em; 
+            font-weight: 700;
+        }
+        li {
+            display: inline-block;
+            margin-left: 5px;
+            @media #{$media-l} {
+                margin-left: 34px;
+            }
+        }
     }
     .nav-btn,
     .nav-btn:link,
-    .nav-btn:visited{
+    .nav-btn:visited {
         bottom: .75rem;
         right: 0;
         height: 30px;
@@ -46,6 +93,15 @@ header {
         -ms-transition: all 300ms ease-in-out;
         transition: all 300ms ease-in-out;
         text-indent: 9999px;
+        @media #{$media-m} {
+            bottom: 17px;
+        }
+    }
+    .cta-btn-m, 
+    .cta-btn-m:link,
+    .cta-btn-m:visited {
+        font-size: .6875rem;
+        border-color: $red;
     }
 }
 
@@ -54,6 +110,7 @@ header {
 .nav a:visited{
     font-size: .85rem;
     letter-spacing: 0.06em;
+    font-weight: 700;
 }
 
 #intro {
@@ -71,6 +128,10 @@ header {
         background-size: 1000px;
         background-repeat: no-repeat;
         background-position: bottom right;
+    }
+    @media only screen and (min-width: 120em) {
+        background-position: 75% -29.5rem;
+        background-size: 1500px;
     }
     h1 {
         letter-spacing: 0.01em;
@@ -135,6 +196,7 @@ header {
             left: calc(-14% + -2.5rem);
         }
         @media only screen and (min-width: 93.75em) {
+            left: calc(-8% + -2.5rem);
         }
     }
     .floater {
@@ -148,6 +210,10 @@ header {
             overflow: visible;
             padding-right: 4rem;
         }
+        @media only screen and (min-width: 93.75em) {
+            width: 92%;
+            margin-left: 8%;
+        }
     }
     .p-holder {
         @media #{$media-l} {
@@ -155,6 +221,10 @@ header {
             border-top: 1px solid $red;
             display: block;
             padding: 2rem 0 5rem 20%;
+        }
+        @media only screen and (min-width: 93.75em) {
+            max-width: 75rem;
+            padding: 2rem 0 5rem 30%;
         }
     }
     p {
@@ -232,7 +302,7 @@ header {
 
 #services {
     text-align: center;
-    padding: 7.75rem 0;
+    padding: 7.75rem 0 0;
     background-color: $white;
     h1 {
         font-weight: 700;

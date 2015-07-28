@@ -698,20 +698,9 @@ section aside.content div ul {
 .arrow {
   position: absolute;
   top: 2rem;
-  display: inline-block;
-  border: solid 2px #fff;
-  letter-spacing: 0.1em;
   font-size: .625rem;
   color: #fff;
   -webkit-tap-highlight-color: transparent;
-  background-color: transparent;
-  text-decoration: none;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 1;
-  padding: 0.45rem 0.65rem 0.375rem;
-  border-radius: 5px;
 }
 
 .arrow-right {
@@ -1231,7 +1220,13 @@ a.cta-btn-m {
     display: inline-block;
     position: absolute;
     right: 235px;
-    bottom: 6px;
+    bottom: 17px;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  a.cta-btn-m {
+    bottom: 36px;
   }
 }
 
@@ -1256,6 +1251,7 @@ a.cta-btn-m {
 .nav a:link,
 .nav a:visited {
   text-decoration: none;
+  color: #b4b4b4;
 }
 
 /* Toggle */
@@ -1281,7 +1277,7 @@ a.cta-btn-m {
     display: inline-block;
     position: absolute;
     right: 140px;
-    bottom: 6px;
+    bottom: 41px;
   }
   .nav ul li {
     display: inline-block;
@@ -1880,6 +1876,20 @@ button, input, select, textarea {
   border-color: #c1836d;
 }
 
+.line-btn {
+  display: inline-block;
+  border: solid 2px #fff;
+  letter-spacing: 0.1em;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  padding: 0.4rem 0.65rem 0.375rem;
+  border-radius: 5px;
+}
+
 .h4-kerned {
   font-size: 1rem;
   line-height: 2;
@@ -1892,12 +1902,26 @@ button, input, select, textarea {
 header {
   padding-top: 1rem;
   z-index: 9999;
-  height: 6.25rem;
-  border-bottom: 1px solid #d9d9d9;
+  height: 35px;
+  border-bottom: solid 1px #d9d9d9;
   width: 86%;
   max-width: 106rem;
   margin: 0 auto;
   background-color: transparent;
+}
+
+@media only screen and (min-width: 38em) {
+  header {
+    height: 2.35rem;
+    margin-top: 75px;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  header {
+    height: 5rem;
+    margin-top: 100px;
+  }
 }
 
 header .small-logo {
@@ -1906,14 +1930,53 @@ header .small-logo {
   width: 100px;
 }
 
+@media only screen and (min-width: 38em) {
+  header .small-logo {
+    bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  header .small-logo {
+    bottom: 41px;
+  }
+}
+
 header .nav-contact-2 {
   bottom: .925rem;
   right: 40px;
   font-size: .6875rem;
 }
 
+@media only screen and (min-width: 38em) {
+  header .nav-contact-2 {
+    bottom: 20px;
+    right: 47px;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  header .nav-contact-2 {
+    right: 0px;
+    bottom: 43px;
+  }
+}
+
 header .nav-contact-2 li a {
   color: #b4b4b4;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+header .nav-contact-2 li {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+@media only screen and (min-width: 60em) {
+  header .nav-contact-2 li {
+    margin-left: 34px;
+  }
 }
 
 header .nav-btn,
@@ -1932,11 +1995,27 @@ header .nav-btn:visited {
   text-indent: 9999px;
 }
 
+@media only screen and (min-width: 38em) {
+  header .nav-btn,
+  header .nav-btn:link,
+  header .nav-btn:visited {
+    bottom: 17px;
+  }
+}
+
+header .cta-btn-m,
+header .cta-btn-m:link,
+header .cta-btn-m:visited {
+  font-size: .6875rem;
+  border-color: #c1836d;
+}
+
 .nav a,
 .nav a:link,
 .nav a:visited {
   font-size: .85rem;
   letter-spacing: 0.06em;
+  font-weight: 700;
 }
 
 #intro {
@@ -1963,6 +2042,13 @@ header .nav-btn:visited {
     background-size: 1000px;
     background-repeat: no-repeat;
     background-position: bottom right;
+  }
+}
+
+@media only screen and (min-width: 120em) {
+  #intro {
+    background-position: 75% -29.5rem;
+    background-size: 1500px;
   }
 }
 
@@ -2051,6 +2137,13 @@ header .nav-btn:visited {
   }
 }
 
+@media only screen and (min-width: 93.75em) {
+  #about-us h2 {
+    left: -webkit-calc(-8% + -2.5rem);
+    left: calc(-8% + -2.5rem);
+  }
+}
+
 #about-us .floater {
   position: relative;
   padding: 1rem;
@@ -2067,12 +2160,26 @@ header .nav-btn:visited {
   }
 }
 
+@media only screen and (min-width: 93.75em) {
+  #about-us .floater {
+    width: 92%;
+    margin-left: 8%;
+  }
+}
+
 @media only screen and (min-width: 60em) {
   #about-us .p-holder {
     position: relative;
     border-top: 1px solid #c1836d;
     display: block;
     padding: 2rem 0 5rem 20%;
+  }
+}
+
+@media only screen and (min-width: 93.75em) {
+  #about-us .p-holder {
+    max-width: 75rem;
+    padding: 2rem 0 5rem 30%;
   }
 }
 
@@ -2165,7 +2272,7 @@ header .nav-btn:visited {
 
 #services {
   text-align: center;
-  padding: 7.75rem 0;
+  padding: 7.75rem 0 0;
   background-color: #fff;
 }
 

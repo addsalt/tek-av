@@ -123,20 +123,9 @@ section.flip-layout aside.content {
 .arrow {
     position: absolute;
     top: 2rem;
-    display: inline-block;
-    border: solid 2px $white;
-    letter-spacing: 0.1em;
     font-size: .625rem;
     color: $white;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
-    background-color: transparent;
-    text-decoration: none;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1;
-    padding: .45rem .65rem .375rem;
-    border-radius: 5px;
 }
 
 .arrow-right {
