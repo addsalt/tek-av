@@ -67,7 +67,7 @@ header {
     }
     @media #{$media-l} {
         padding: calc(50px + 12rem) 7% 15rem;
-        background-image: url(../../images/intrp-box.jpg);
+        background-image: url(http://www.justaddsalt.ca/tek-av/images/intrp-box.jpg);
         background-size: 1000px;
         background-repeat: no-repeat;
         background-position: bottom right;
@@ -167,7 +167,7 @@ header {
         background-position: center center;
     }
     .local-service {
-        background-image: url(../../images/local-service.jpg);
+        background-image: url(http://www.justaddsalt.ca/tek-av/images/local-service.jpg);
         margin-top: 30px;
         h2 {
             border-top: 6px solid $red;
@@ -181,7 +181,7 @@ header {
     }
     .dream-setup {
         margin-top: 60px;
-        background-image: url(../../images/local-service.jpg);
+        background-image: url(http://www.justaddsalt.ca/tek-av/images/local-service.jpg);
         h2 {
             border-top: 6px solid $yellow;
         }
@@ -194,7 +194,7 @@ header {
     }
     .crafted {
         margin-top: 60px;
-        background-image: url(../../images/local-service.jpg);
+        background-image: url(http://www.justaddsalt.ca/tek-av/images/local-service.jpg);
         h2 {
             border-top: 6px solid $blue;
         }
@@ -219,7 +219,7 @@ header {
 }
 
 .slide-0 {
-    background-image: url(../../images/placeholder1.jpg);
+    background-image: url(http://www.justaddsalt.ca/tek-av/images/placeholder1.jpg);
 }
 
 .slide-1 {
@@ -377,7 +377,7 @@ header {
         }
         #front-1 {
             background-color: $red;
-            background-image: url(../../images/audio-box.jpg);
+            background-image: url(http://www.justaddsalt.ca/tek-av/images/audio-box.jpg);
             background-size: 456px;
             background-position: right 1.75rem;
             @media #{$media-s} {
@@ -385,19 +385,19 @@ header {
                 background-position: right 1.75rem;
             }
             @media only screen and (min-width: 40em) {
-                background-image: url(../../images/audio-box-ng.jpg);
+                background-image: url(http://www.justaddsalt.ca/tek-av/images/audio-box-ng.jpg);
                 background-size: 256px;
                 background-position: right 1.75rem;
             }
             @media only screen and (min-width: 70em) {
-                background-image: url(../../images/audio-box.jpg);
+                background-image: url(http://www.justaddsalt.ca/tek-av/images/audio-box.jpg);
                 background-size: 656px;
                 background-position: right 1.75rem;
             }
         }
         #front-2 {
             background-color: $yellow;
-            background-image: url(../../images/video-box.jpg);
+            background-image: url(http://www.justaddsalt.ca/tek-av/images/video-box.jpg);
             background-size: 456px;
             background-position: right 1.75rem;
             @media #{$media-s} {
@@ -405,19 +405,19 @@ header {
                 background-position: right 1.75rem;
             }
             @media only screen and (min-width: 40em) {
-                background-image: url(../../images/video-box-ng.jpg);
+                background-image: url(http://www.justaddsalt.ca/tek-av/images/video-box-ng.jpg);
                 background-size: 256px;
                 background-position: right 1.75rem;
             }
             @media only screen and (min-width: 70em) {
-                background-image: url(../../images/video-box.jpg);
+                background-image: url(http://www.justaddsalt.ca/tek-av/images/video-box.jpg);
                 background-size: 656px;
                 background-position: right 1.75rem;
             }
         }
         #front-3 {
             background-color: $blue;
-            background-image: url(../../images/network-box.jpg);
+            background-image: url(http://www.justaddsalt.ca/tek-av/images/network-box.jpg);
             background-size: 456px;
             background-position: right 1.75rem;
             @media #{$media-s} {
@@ -425,12 +425,12 @@ header {
                 background-position: right 2.75rem;
             }
             @media only screen and (min-width: 40em) {
-                background-image: url(../../images/network-box-ng.jpg);
+                background-image: url(http://www.justaddsalt.ca/tek-av/images/network-box-ng.jpg);
                 background-size: 250px;
                 background-position: right 1.75rem;
             }
             @media only screen and (min-width: 70em) {
-                background-image: url(../../images/network-box.jpg);
+                background-image: url(http://www.justaddsalt.ca/tek-av/images/network-box.jpg);
                 background-size: 656px;
                 background-position: right 1.75rem;
             }
@@ -485,7 +485,7 @@ header {
         }
     }
     .possibilities {
-        background-image: url(../../images/endless-possibilities.jpg);
+        background-image: url(http://www.justaddsalt.ca/tek-av/images/endless-possibilities.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -558,7 +558,7 @@ header {
     } //possibilities
     .logos {
         background-color: $charcoal;
-        background-image: url(../../images/tekav-pattern.png);
+        background-image: url(http://www.justaddsalt.ca/tek-av/images/tekav-pattern.png);
         background-size: 30px;
         padding: 7.25rem 0;
         ul {
@@ -601,7 +601,7 @@ header {
             content: '';
             background-size: contain;
             background-color: transparent;
-            background-image: url(../../images/tek-av-icon-red.png);
+            background-image: url(http://www.justaddsalt.ca/tek-av/images/tek-av-icon-red.png);
             height: 25px;
             width: 27px;
             background-repeat: no-repeat;
@@ -647,10 +647,10 @@ header {
         border-color: $blue;
     }
     .project-yellow .content:after{
-        background-image: url(../../images/tek-av-icon-yellow.png);
+        background-image: url(http://www.justaddsalt.ca/tek-av/images/tek-av-icon-yellow.png);
     }
     .project-blue .content:after{
-        background-image: url(../../images/tek-av-icon-blue.png);
+        background-image: url(http://www.justaddsalt.ca/tek-av/images/tek-av-icon-blue.png);
     }
 }
 
@@ -691,7 +691,7 @@ section.flip-layout aside.content {
         &:after {
             content: '';
             background-color: $grey;
-            background-image: url(../../images/tek-av-icon-before.png);
+            background-image: url(http://www.justaddsalt.ca/tek-av/images/tek-av-icon-before.png);
             background-size: contain;
             background-position: center center;
             background-repeat: no-repeat;
