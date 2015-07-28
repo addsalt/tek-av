@@ -61,7 +61,7 @@ section aside.content {
     width: 100%;
     position: relative;
     box-sizing: border-box;
-    padding: 6%;
+    padding: 2rem;
     
     @media #{$media-m} { 
         width: 50%;
@@ -122,52 +122,29 @@ section.flip-layout aside.content {
 
 .arrow {
     position: absolute;
-    top: .5rem;
+    top: 2rem;
     display: inline-block;
-    height: 50px;
+    border: solid 2px $white;
+    letter-spacing: 0.1em;
+    font-size: .625rem;
+    color: $white;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     background-color: transparent;
-    color: white;
     text-decoration: none;
-    font-weight: 400;
-    font-size: 0.85rem;
-}
-
-.arrow:after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: url(http://justaddsalt.ca/tek-av/images/slider-arrow.png) 0 50% / 20px no-repeat; 
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    padding: .45rem .65rem .375rem;
+    border-radius: 5px;
 }
 
 .arrow-right {
-    right: .5rem;
-    padding-right: 25px;
-    padding-top: 3px;
-    @media only screen and (min-width: 45em) {
-        color: $charcoal;
-    }
-}
-
-.arrow-right:after {
-    right: 0;
-    -webkit-transform: rotate(180deg);
-    @media only screen and (min-width: 45em) {
-        -webkit-filter: brightness(-3);
-        filter: brightness(-3);
-    }
+    right: 2rem;
 }
 
 .arrow-left {
-    left: .5rem;
-    padding-left: 25px;
-    padding-top: 3px;
-}
-
-.arrow-left:after {
-    left: 0;
+    left: 2rem;
 }
 
 [id^="target-item"] {
@@ -231,8 +208,12 @@ section.flip-layout aside.content {
 
 .slide {
     float: left;
-    width: 33.333333%;
+    width: 100%;
     height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 .slide:after,
@@ -278,13 +259,6 @@ section.flip-layout aside.content {
 
 .slider-nav a.active {
   background-color: rgba(255,255,255,.6);
-}
-
-.slide {
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    position: relative;
 }
 
 // Three Column
