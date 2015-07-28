@@ -81,21 +81,16 @@
     background-color: $lightgrey;
 }
 
-#slide-0 {
+.slide-0 {
     background-image: url("http://placehold.it/1400x1400/666666/ffffff");
-    position: relative;
 }
 
-#slide-0:after {
-    content: 'Optional caption for each image. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.';
+.slide-1 {
+  background-image: url('http://placehold.it/1400x1400/333333/ffffff');
 }
 
-#slide-1 {
-  background-image: url(http://placehold.it/1400x1400/333333/ffffff);
-}
-
-#slide-2 {
-  background-image: url(http://placehold.it/1400x1400/555555/ffffff);
+.slide-2 {
+  background-image: url('http://placehold.it/1400x1400/555555/ffffff');
 }
 
 #services {
