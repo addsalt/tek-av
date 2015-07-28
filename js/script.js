@@ -19,6 +19,19 @@ $(document).ready(function(){
 		mouseDrag: false
 	});
 
+	$("#testimonials .slider-nav a").first().addClass('active');
+
+	$("#testimonials .slider-nav a").click(function(ev){
+
+		ev.preventDefault();
+
+		$(this).parent().find('.active').removeClass('active');
+		$(this).addClass('active');
+
+		$("#testimonials .slider .holder").data('owlCarousel').goTo( $(this).data('testimonial-number') - 1 );
+
+	});
+
 	$('#projects .projects-carousel-item aside.media').each(function(){
 
 		var slider = {
