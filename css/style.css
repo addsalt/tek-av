@@ -1702,6 +1702,22 @@ input[type="checkbox"] {
   background-color: white;
   border: solid 1px #b4b4b4;
   display: inline-block;
+  outline: none;
+  position: relative;
+}
+
+input[type="checkbox"]:after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 4px;
+  background-color: transparent;
+  top: 2px;
+  left: 2px;
+}
+
+input[type="checkbox"]:checked:after {
+  background-color: rgba(44, 44, 44, 0.5);
 }
 
 .checkbox-label {
@@ -1738,8 +1754,7 @@ input[type="submit"] {
   color: #c1836d;
   position: relative;
   overflow: hidden;
-  margin: 0px;
-  margin-top: 35px;
+  margin: 35px auto 0;
   padding: 5px 0;
   cursor: pointer;
   outline: none;
@@ -1752,6 +1767,7 @@ input[type="submit"] {
   max-width: 327px;
   display: block;
   text-transform: uppercase;
+  outline: none;
 }
 
 input[type="submit"]:hover {
@@ -1765,7 +1781,7 @@ input[type="button"], .md-close, .md-content button {
   color: buttontext;
   padding: 0;
   display: block;
-  margin-top: 15px;
+  margin: 15px auto 0;
   border: none;
   background-color: transparent;
   box-sizing: border-box;
@@ -1775,6 +1791,7 @@ input[type="button"], .md-close, .md-content button {
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: underline;
+  outline: none;
 }
 
 .option-section {
@@ -1796,7 +1813,9 @@ input[type="button"], .md-close, .md-content button {
   width: 32px;
   position: absolute;
   top: -12px;
-  right: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 8;
 }
 
@@ -2886,8 +2905,10 @@ section.flip-layout aside.content .numbering {
   width: 32px;
   position: absolute;
   top: -12px;
-  right: 50%;
   z-index: 8;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 #testimonials .author {

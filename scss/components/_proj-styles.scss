@@ -769,8 +769,10 @@ section.flip-layout aside.content {
             width: 32px;
             position: absolute;
             top: -12px;
-            right: 50%;
             z-index: 8;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
         }
     }
     .author {
