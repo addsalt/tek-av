@@ -15,6 +15,10 @@ body {
     -moz-font-feature-settings: "kern";
     -moz-font-feature-settings: "kern=1";
     text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.004);
 }
 
 p {
