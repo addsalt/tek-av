@@ -426,37 +426,57 @@
         
         <div class="md-modal md-effect-1" id="modal-1">
 			<div class="md-content">
-				<h3>Get a custom quote</h3>
+				<h3>Get a custom quote.</h3>
                 <section class="content">
                     <form action="demo_form.asp" method="get">
+                        
                         <span class="input input--yoshiko">
                             <input class="input__field input__field--yoshiko" type="text" id="input-10" />
                             <label class="input__label input__label--yoshiko" for="input-10">
-                                <span class="input__label-content input__label-content--yoshiko" data-content="Your name">Your name</span>
+                                <span class="input__label-content input__label-content--yoshiko" data-content="Your name">Your full name</span>
                             </label>
                         </span>
                         <span class="input input--yoshiko">
                             <input class="input__field input__field--yoshiko" type="text" id="input-11" />
                             <label class="input__label input__label--yoshiko" for="input-11">
-                                <span class="input__label-content input__label-content--yoshiko" data-content="Your email">Your email</span>
+                                <span class="input__label-content input__label-content--yoshiko" data-content="Your email">Your email address</span>
                             </label>
                         </span>
                         <span class="input input--yoshiko">
                             <input class="input__field input__field--yoshiko" type="text" id="input-12" />
                             <label class="input__label input__label--yoshiko" for="input-12">
-                                <span class="input__label-content input__label-content--yoshiko" data-content="Phone number">Phone number</span>
+                                <span class="input__label-content input__label-content--yoshiko" data-content="Phone number">Your phone number</span>
                             </label>
                         </span>
-                        <p class="no-m-b">I am interested in</p>
-                        <input type="checkbox" name="vehicle" value="Audio" class="checkbox">Audio Installations<br>
-                        <input type="checkbox" name="vehicle" value="Video" class="checkbox">Video Installations<br>
-                        <input type="checkbox" name="vehicle" value="Network" class="checkbox">Networking
-                        Installations<br>
-                        <p class="push-top-2 no-m-b">I own</p>
-                        <input type="checkbox" name="vehicle" value="Audio" class="checkbox">A home<br>
-                        <input type="checkbox" name="vehicle" value="Video" class="checkbox">A commercial building<br>
-                        <input class="btn" type="submit" value="Submit">
+                        <div class="option-section">
+                            <h4>I am interested in:</h4>
+                            <span class="checkbox-input">
+                                <input type="checkbox" name="audio" value="Audio" class="checkbox" id="input-audio">
+                                <label for="input-audio" class="checkbox-label">Audio Installations</label>
+                            </span>
+                            <span class="checkbox-input">
+                                <input type="checkbox" name="audio" value="Audio" class="checkbox" id="input-video">
+                                <label for="input-video" class="checkbox-label">Video Installations</label>
+                            </span>
+                            <span class="checkbox-input">
+                                <input type="checkbox" name="networking" value="Network" class="checkbox" id="input-network">
+                                <label for="input-network" class="checkbox-label">Network Installations</label>
+                            </span>
+
+                            <h4>I own:</h4>
+                            <span class="checkbox-input">
+                                <input type="checkbox" name="residential" value="Residential" class="checkbox" id="input-residential">
+                                <label for="input-residential" class="checkbox-label">A residential building</label>
+                            </span>
+                            <span class="checkbox-input">
+                                <input type="checkbox" name="commercial" value="Commercial" class="checkbox" id="input-commercial">
+                                <label for="input-commercial" class="checkbox-label">A commercial building</label>
+                            </span>
+
+                            <input class="btn form-btn" type="submit" value="Submit">
+                        </div>
                     </form>
+                    
                 </section>
 				<div>
 					<button class="md-close">Close form</button>
