@@ -1755,7 +1755,7 @@ input[type="submit"] {
   position: relative;
   overflow: hidden;
   margin: 35px auto 0;
-  padding: 5px 0;
+  padding: 7px 0;
   cursor: pointer;
   outline: none;
   -webkit-transition: all 0.3s;
@@ -1837,10 +1837,10 @@ button, input, select, textarea {
   position: relative;
   z-index: 1;
   display: inline-block;
-  margin-bottom: 19px;
+  margin-bottom: 15px;
   width: 100%;
   vertical-align: middle;
-  height: 31px;
+  height: 35px;
   overflow: hidden;
 }
 
@@ -1894,7 +1894,7 @@ button, input, select, textarea {
   display: block;
   width: 100%;
   color: #b4b4b4;
-  padding: 0.25em 0;
+  padding: 5px 0;
   -webkit-transition: -webkit-transform 0.25s;
   transition: transform 0.25s;
   -webkit-transition-timing-function: ease-in-out;
@@ -1913,11 +1913,10 @@ button, input, select, textarea {
   height: 100%;
   width: 100%;
   color: #b4b4b4;
-  padding: 0.25em 0;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-size: 0.5rem;
-  padding: 6px 0px 0;
+  padding: 7px 0px 0;
   opacity: .25;
 }
 
@@ -2386,7 +2385,7 @@ header .cta-btn-m:visited {
 }
 
 #services .flipper .back ul {
-  overflow: auto;
+  overflow: hidden;
 }
 
 #services .flipper .back .custom-quote-btn {
