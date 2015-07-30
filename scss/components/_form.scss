@@ -37,7 +37,7 @@ button, input, select, textarea {
     width: 100%;
     padding-left: 13px;
 	background-color: transparent;
-	border: 2px solid $lightgrey;
+	border: 2px solid rgba($lightgrey, .8);
 	-webkit-transition: background-color 0.25s, border-color 0.25s;
 	transition: background-color 0.25s, border-color 0.25s;
 }

@@ -1781,12 +1781,12 @@ input[type="button"], .md-close, .md-content button {
   color: buttontext;
   padding: 0;
   display: block;
-  margin: 15px auto 0;
+  margin: 12px auto 0;
   border: none;
   background-color: transparent;
   box-sizing: border-box;
   font-size: .6875rem;
-  color: #b4b4b4;
+  color: rgba(180, 180, 180, 0.9);
   letter-spacing: 0.05em;
   font-weight: 700;
   text-transform: uppercase;
@@ -1859,7 +1859,7 @@ button, input, select, textarea {
   width: 100%;
   padding-left: 13px;
   background-color: transparent;
-  border: 2px solid #b4b4b4;
+  border: 2px solid rgba(180, 180, 180, 0.8);
   -webkit-transition: background-color 0.25s, border-color 0.25s;
   transition: background-color 0.25s, border-color 0.25s;
 }
