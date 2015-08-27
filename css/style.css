@@ -1034,12 +1034,6 @@ table {
   left: 0;
 }
 
-.logos ul li {
-  display: inline-block;
-  width: 4.8125rem;
-  margin: 0 0.3125em;
-}
-
 .md-content section {
   height: auto;
   min-height: 1px;
@@ -2752,6 +2746,15 @@ header .cta-btn-m:visited {
   width: 95%;
   max-width: 56.375rem;
   margin: 3rem auto 0;
+}
+
+#services .logos ul li {
+  display: inline-block;
+  margin: 20px 26px;
+}
+
+#services .logos ul li img {
+  height: 21px;
 }
 
 #our-work {

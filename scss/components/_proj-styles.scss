@@ -635,6 +635,13 @@ header {
             width: 95%;
             max-width: 56.375rem;
             margin: 3rem auto 0;
+            li {
+                display: inline-block;
+                margin: 20px 26px;
+                img {
+                    height: 21px;
+                }
+            }
         }
     }
 } // services
