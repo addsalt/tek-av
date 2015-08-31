@@ -67,6 +67,14 @@ header {
             color: $lightgrey; 
             letter-spacing: 0.1em; 
             font-weight: 700;
+            -webkit-transition: all 300ms ease-in-out;
+            -moz-transition: all 300ms ease-in-out;
+            -o-transition: all 300ms ease-in-out;
+            -ms-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+            &:hover {
+                color: $red;
+            }
         }
         li {
             display: inline-block;
@@ -111,6 +119,14 @@ header {
     font-size: .85rem;
     letter-spacing: 0.06em;
     font-weight: 700;
+    -webkit-transition: all 300ms ease-in-out;
+        -moz-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+        -ms-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+    &:hover {
+        color: $red;
+    }
 }
 
 #intro {
