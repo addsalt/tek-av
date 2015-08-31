@@ -193,10 +193,10 @@ header {
         @media #{$media-l} {
             position: absolute;
             top: 0;
-            left: calc(-14% + -2.5rem);
+            left: calc(-14% - 3.2rem);
         }
         @media only screen and (min-width: 93.75em) {
-            left: calc(-8% + -2.5rem);
+            left: calc(-8% - 3.2rem);
         }
     }
     .floater {
@@ -237,7 +237,7 @@ header {
         background-position: center center;
     }
     .local-service {
-        background-image: url(http://www.justaddsalt.ca/tek-av/images/local-service.jpg);
+        background-image: url(/images/local-service-1.jpg);
         margin-top: 30px;
         h2 {
             border-top: 6px solid $red;
@@ -251,7 +251,7 @@ header {
     }
     .dream-setup {
         margin-top: 60px;
-        background-image: url(http://www.justaddsalt.ca/tek-av/images/local-service.jpg);
+        background-image: url(/images/dream-setup.jpg);
         h2 {
             border-top: 6px solid $yellow;
         }
@@ -264,7 +264,7 @@ header {
     }
     .crafted {
         margin-top: 60px;
-        background-image: url(http://www.justaddsalt.ca/tek-av/images/local-service.jpg);
+        background-image: url(/images/crafted.jpg);
         h2 {
             border-top: 6px solid $blue;
         }
@@ -542,12 +542,18 @@ header {
         }
     }
     .mini-cards {
-        width: 86%;
+        width: 96%;
+        @media only screen and (min-width: 35em) {
+            width: 86%;
+        }
         padding-top: 3rem;
         text-align: center;
         margin-bottom: 7.25rem;
         h5 {
-            font-size: .75rem;
+            font-size: .5rem;
+            @media #{$media-s} { 
+                font-size: .75rem;
+            }
             font-weight: 700;
             line-height: 1.333333333;
             color: $text;

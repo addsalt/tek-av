@@ -497,12 +497,18 @@ input.checkbox {
             margin: 0 .625em .625em;
         }
         img {
-            height: 30px;
-            width: 30px;
-            top: 17px;
+            height: 25px;
+            width: 25px;
+            top: 18px;
+            left: 10px;
             bottom: 0;
-            left: 8px;
             position: absolute;
+            @media only screen and (min-width: 35em) {
+                left: 8px;
+                top: 17px;
+                height: 30px;
+                width: 30px;
+            }
             @media #{$media-s} { 
                 height: 40px;
                 width: 40px;
@@ -516,7 +522,7 @@ input.checkbox {
             color: $charcoal;
             left: 45px;
             @media #{$media-s} { 
-                left: 60px
+                left: 63px
             }
             padding-right: .5rem;
             top: 50%;

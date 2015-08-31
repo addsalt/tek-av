@@ -1074,12 +1074,21 @@ table {
 }
 
 .mini-cards li img {
-  height: 30px;
-  width: 30px;
-  top: 17px;
+  height: 25px;
+  width: 25px;
+  top: 18px;
+  left: 10px;
   bottom: 0;
-  left: 8px;
   position: absolute;
+}
+
+@media only screen and (min-width: 35em) {
+  .mini-cards li img {
+    left: 8px;
+    top: 17px;
+    height: 30px;
+    width: 30px;
+  }
 }
 
 @media only screen and (min-width: 25em) {
@@ -1103,7 +1112,7 @@ table {
 
 @media only screen and (min-width: 25em) {
   .mini-cards li h5 {
-    left: 60px;
+    left: 63px;
   }
 }
 
@@ -2187,13 +2196,13 @@ header .cta-btn-m:visited {
   #about-us h2 {
     position: absolute;
     top: 0;
-    left: calc(-14% + -2.5rem);
+    left: calc(-14% - 3.2rem);
   }
 }
 
 @media only screen and (min-width: 93.75em) {
   #about-us h2 {
-    left: calc(-8% + -2.5rem);
+    left: calc(-8% - 3.2rem);
   }
 }
 
@@ -2248,7 +2257,7 @@ header .cta-btn-m:visited {
 }
 
 #about-us .local-service {
-  background-image: url(http://www.justaddsalt.ca/tek-av/images/local-service.jpg);
+  background-image: url(/images/local-service-1.jpg);
   margin-top: 30px;
 }
 
@@ -2266,7 +2275,7 @@ header .cta-btn-m:visited {
 
 #about-us .dream-setup {
   margin-top: 60px;
-  background-image: url(http://www.justaddsalt.ca/tek-av/images/local-service.jpg);
+  background-image: url(/images/dream-setup.jpg);
 }
 
 #about-us .dream-setup h2 {
@@ -2283,7 +2292,7 @@ header .cta-btn-m:visited {
 
 #about-us .crafted {
   margin-top: 60px;
-  background-image: url(http://www.justaddsalt.ca/tek-av/images/local-service.jpg);
+  background-image: url(/images/crafted.jpg);
 }
 
 #about-us .crafted h2 {
@@ -2629,18 +2638,30 @@ header .cta-btn-m:visited {
 }
 
 #services .mini-cards {
-  width: 86%;
+  width: 96%;
   padding-top: 3rem;
   text-align: center;
   margin-bottom: 7.25rem;
 }
 
+@media only screen and (min-width: 35em) {
+  #services .mini-cards {
+    width: 86%;
+  }
+}
+
 #services .mini-cards h5 {
-  font-size: .75rem;
+  font-size: .5rem;
   font-weight: 700;
   line-height: 1.333333333;
   color: #4e4e4e;
   letter-spacing: 0.3em;
+}
+
+@media only screen and (min-width: 25em) {
+  #services .mini-cards h5 {
+    font-size: .75rem;
+  }
 }
 
 #services .possibilities {
