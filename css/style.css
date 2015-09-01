@@ -2118,7 +2118,7 @@ header .nav-btn:visited {
   width: 30px;
   border: solid 2px #c1836d;
   border-radius: 5px;
-  background: transparent url("../images/nav.png") no-repeat center center;
+  background: transparent url("http://www.justaddsalt.ca/tek-av/images/nav.png") no-repeat center center;
   background-size: 13px;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
@@ -2373,7 +2373,7 @@ header .cta-btn-sm:visited {
 }
 
 #about-us .local-service {
-  background-image: url(/images/local-service-1.jpg);
+  background-image: url(http://www.justaddsalt.ca/tek-av/images/local-service-1.jpg);
   margin-top: 30px;
 }
 
@@ -2391,7 +2391,7 @@ header .cta-btn-sm:visited {
 
 #about-us .dream-setup {
   margin-top: 60px;
-  background-image: url(/images/dream-setup.jpg);
+  background-image: url(http://www.justaddsalt.ca/tek-av/images/dream-setup.jpg);
 }
 
 #about-us .dream-setup h2 {
@@ -2408,7 +2408,7 @@ header .cta-btn-sm:visited {
 
 #about-us .crafted {
   margin-top: 60px;
-  background-image: url(/images/crafted.jpg);
+  background-image: url(http://www.justaddsalt.ca/tek-av/images/crafted.jpg);
 }
 
 #about-us .crafted h2 {
@@ -2593,7 +2593,7 @@ header .cta-btn-sm:visited {
 #services .flipper .flip-btn:after {
   content: '';
   position: absolute;
-  background-image: url(/images/arrow.png);
+  background-image: url(http://www.justaddsalt.ca/tek-av/images/arrow.png);
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -3208,11 +3208,11 @@ footer .copyright li {
 }
 
 .facebook-i:after {
-  background-image: url(/images/facebook-icon.png);
+  background-image: url(http://www.justaddsalt.ca/tek-av/images/facebook-icon.png);
 }
 
 .instagram-i:after {
-  background-image: url(/images/instagram-icon.png);
+  background-image: url(http://www.justaddsalt.ca/tek-av/images/instagram-icon.png);
 }
 
 .option-section {
