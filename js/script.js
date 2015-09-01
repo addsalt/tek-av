@@ -100,12 +100,21 @@ $(document).ready(function(){
 
 	});
 
+	// causing it so that the label doesn't show on the modal 
+	// window after you type something in it (and leave it [blur])
 	$('.input__field').blur(function(){
-		if( $(this).val() != ""  ){
-			$(this).parent().find('.input__label span').hide();
+
+		// caching
+		var $this = $(this);
+		var $label = $this.parent().find('.input__label span');
+
+		// logic to check if input has value.
+		if( $this.val() != ""  ){
+			$label.hide();
 		}else{
-			$(this).parent().find('.input__label span').show();
+			$label.show();
 		}
+
 	});
 
 	// code to 
