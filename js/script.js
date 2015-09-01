@@ -100,6 +100,14 @@ $(document).ready(function(){
 
 	});
 
+	$('.input__field').blur(function(){
+		if( $(this).val() != ""  ){
+			$(this).parent().find('.input__label span').hide();
+		}else{
+			$(this).parent().find('.input__label span').show();
+		}
+	});
+
 	// code to 
 
 	if( urlHash.split('-')[0] == "#project" ){
