@@ -2130,6 +2130,11 @@ header .cta-btn-sm:visited {
   border-color: #c1836d;
 }
 
+header .cta-btn-m:active,
+header .cta-btn-m:hover {
+  color: #b4b4b4;
+}
+
 header .cta-btn-sm,
 header .cta-btn-sm:link,
 header .cta-btn-sm:visited {

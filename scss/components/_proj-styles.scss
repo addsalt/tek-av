@@ -118,6 +118,10 @@ header {
         font-size: .6875rem;
         border-color: $red;
     }
+    .cta-btn-m:active, 
+    .cta-btn-m:hover {
+        color: $lightgrey;
+    }
     .cta-btn-sm, 
     .cta-btn-sm:link,
     .cta-btn-sm:visited {
