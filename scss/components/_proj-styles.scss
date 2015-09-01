@@ -97,7 +97,7 @@ header {
         width: 30px;
         border: solid 2px $red;
         border-radius: 5px;
-        background: transparent url('../images/nav.png') no-repeat center center;
+        background: transparent url('http://www.justaddsalt.ca/tek-av/images/nav.png') no-repeat center center;
         background-size: 13px; 
         -webkit-transition: all 300ms ease-in-out;
         -moz-transition: all 300ms ease-in-out;
@@ -288,7 +288,7 @@ header {
         background-position: center center;
     }
     .local-service {
-        background-image: url(/images/local-service-1.jpg);
+        background-image: url(http://www.justaddsalt.ca/tek-av/images/local-service-1.jpg);
         margin-top: 30px;
         h2 {
             border-top: 6px solid $red;
@@ -302,7 +302,7 @@ header {
     }
     .dream-setup {
         margin-top: 60px;
-        background-image: url(/images/dream-setup.jpg);
+        background-image: url(http://www.justaddsalt.ca/tek-av/images/dream-setup.jpg);
         h2 {
             border-top: 6px solid $yellow;
         }
@@ -315,7 +315,7 @@ header {
     }
     .crafted {
         margin-top: 60px;
-        background-image: url(/images/crafted.jpg);
+        background-image: url(http://www.justaddsalt.ca/tek-av/images/crafted.jpg);
         h2 {
             border-top: 6px solid $blue;
         }
@@ -471,7 +471,7 @@ header {
             &:after {
                 content: '';
                 position: absolute;
-                background-image: url(/images/arrow.png);
+                background-image: url(http://www.justaddsalt.ca/tek-av/images/arrow.png);
                 background-position: center center;
                 background-size: contain;
                 background-repeat: no-repeat;
@@ -979,11 +979,11 @@ footer {
 }
 
 .facebook-i:after {
-    background-image: url(/images/facebook-icon.png);
+    background-image: url(http://www.justaddsalt.ca/tek-av/images/facebook-icon.png);
 }
 
 .instagram-i:after {
-    background-image: url(/images/instagram-icon.png);
+    background-image: url(http://www.justaddsalt.ca/tek-av/images/instagram-icon.png);
 }
 
 .option-section {
