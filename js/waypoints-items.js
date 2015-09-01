@@ -5,5 +5,5 @@ var $navTrigger =$('#about-us');
 var $header =$('.header');
 
 $navTrigger.waypoint(function() {
-    $header.addClass('scroll-header');
+    $header.toggleClass('scroll-header');
 }, { offset:'10%'});
