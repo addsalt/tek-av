@@ -10,7 +10,7 @@ perspective effects (not including the modals and the overlay).
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	width: 50%;
+	width: 75%;
 	max-width: 630px;
 	min-width: 350px;
 	height: auto;
@@ -92,8 +92,8 @@ perspective effects (not including the modals and the overlay).
 .md-content h4 {
     letter-spacing: 0;
     font-size: 1rem;
-    margin-bottom: 18px;
-    margin-top: 18px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .md-content button {
@@ -175,7 +175,7 @@ input[type="submit"] {
     color: $red;
     position: relative;
     overflow: hidden;
-    margin: 35px auto 0;
+    margin: .75rem auto 0;
     padding: 7px 0;
     cursor: pointer;
     outline: none;

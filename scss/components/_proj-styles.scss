@@ -432,11 +432,17 @@ header {
             padding: 0;
             position: relative;
             &:after {
-                content: '&';
+                content: '';
                 position: absolute;
+                background-image: url(/images/arrow.png);
+                background-position: center center;
+                background-size: contain;
+                background-repeat: no-repeat;
                 top: 0;
                 right: 0;
                 top: 1.3rem;
+                height: 14px;
+                width: 16px;
                 text-align: right;
                 color: white;
             }
@@ -457,6 +463,8 @@ header {
             bottom: 1.25rem;
             left: 1.5rem;
             right: 1.5rem;
+        }
+        .see-less {
             &:after {
                 -webkit-transform: rotateY(180deg);
             }
@@ -914,4 +922,41 @@ footer {
             }
         }
     }
+}
+
+.facebook-i, .instagram.i {
+    position: relative;
+    display: inline-block;
+    &:after {
+        position: absolute;
+        content: '';
+        height: 16px;
+        width: 16px;
+        top: 0;
+        left: 0;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.facebook-i {
+    background-image: url(/images/facebook-icon.png);
+}
+
+.instagram-i {
+    background-image: url(/images/instagram-icon.png);
+}
+
+.option-section {
+    display: none;
+    @media only screen and (min-width: 38em) {
+        display: block;
+    }
+}
+
+.md-content .contact-blurb {
+    margin-top: 1.5rem;
+    font-size: 0.5rem;
+    color: $red;
 }

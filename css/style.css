@@ -1615,7 +1615,7 @@ perspective effects (not including the modals and the overlay).
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 50%;
+  width: 75%;
   max-width: 630px;
   min-width: 350px;
   height: auto;
@@ -1696,8 +1696,8 @@ perspective effects (not including the modals and the overlay).
 .md-content h4 {
   letter-spacing: 0;
   font-size: 1rem;
-  margin-bottom: 18px;
-  margin-top: 18px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .md-content button {
@@ -1778,7 +1778,7 @@ input[type="submit"] {
   color: #c1836d;
   position: relative;
   overflow: hidden;
-  margin: 35px auto 0;
+  margin: .75rem auto 0;
   padding: 7px 0;
   cursor: pointer;
   outline: none;
@@ -2514,11 +2514,17 @@ header .cta-btn-m:visited {
 }
 
 #services .flipper .flip-btn:after {
-  content: '&';
+  content: '';
   position: absolute;
+  background-image: url(/images/arrow.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
   top: 0;
   right: 0;
   top: 1.3rem;
+  height: 14px;
+  width: 16px;
   text-align: right;
   color: white;
 }
@@ -2542,7 +2548,7 @@ header .cta-btn-m:visited {
   right: 1.5rem;
 }
 
-#services .flipper .flip-btn:after, #services .flipper .see-less:after {
+#services .flipper .see-less:after {
   -webkit-transform: rotateY(180deg);
 }
 
@@ -3104,4 +3110,45 @@ footer .copyright li {
     border-right: solid 1px #b4b4b4;
     padding-right: .5rem;
   }
+}
+
+.facebook-i, .instagram.i {
+  position: relative;
+  display: inline-block;
+}
+
+.facebook-i:after, .instagram.i:after {
+  position: absolute;
+  content: '';
+  height: 16px;
+  width: 16px;
+  top: 0;
+  left: 0;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.facebook-i {
+  background-image: url(/images/facebook-icon.png);
+}
+
+.instagram-i {
+  background-image: url(/images/instagram-icon.png);
+}
+
+.option-section {
+  display: none;
+}
+
+@media only screen and (min-width: 38em) {
+  .option-section {
+    display: block;
+  }
+}
+
+.md-content .contact-blurb {
+  margin-top: 1.5rem;
+  font-size: 0.5rem;
+  color: #c1836d;
 }
