@@ -1161,7 +1161,7 @@ header {
   display: block;
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: -2.25rem;
   height: 35px;
   width: 35px;
   background: #c1836d url("../images/nav.png") no-repeat center center;
@@ -1180,14 +1180,24 @@ header {
   background-color: #f4f4f4;
 }
 
+.nav ul li {
+  list-style-type: none;
+}
+
 .nav-contact a {
   display: block;
 }
 
 .nav-contact-2 {
   position: absolute;
-  bottom: 4px;
+  top: -1.5rem;
   right: 40px;
+}
+
+@media only screen and (min-width: 60em) {
+  .nav-contact-2 {
+    top: -3.75rem;
+  }
 }
 
 .nav-contact-2 li {
@@ -1204,21 +1214,27 @@ a.cta-btn-m {
     display: inline-block;
     position: absolute;
     right: 235px;
-    bottom: 17px;
+    top: -2.25rem;
   }
 }
 
 @media only screen and (min-width: 60em) {
   a.cta-btn-m {
-    bottom: 36px;
+    top: -4.25rem;
   }
 }
 
 .small-logo {
   position: absolute;
-  bottom: 4px;
+  top: -1.785rem;
   left: 2px;
   width: 103px;
+}
+
+@media only screen and (min-width: 60em) {
+  .small-logo {
+    top: -3.785rem;
+  }
 }
 
 @media only screen and (min-width: 38em) {
@@ -1245,10 +1261,8 @@ a.cta-btn-m {
 
 .nav-top[data-state="expanded"] {
   display: block;
-  margin-top: 35px;
-  background-color: #b4b4b4;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  padding: 5%;
+  background-color: #fff;
+  padding: 9.25%;
 }
 
 @media only screen and (min-width: 60em) {
@@ -1261,7 +1275,7 @@ a.cta-btn-m {
     display: inline-block;
     position: absolute;
     right: 140px;
-    bottom: 41px;
+    top: -4rem;
   }
   .nav ul li {
     display: inline-block;
@@ -1986,28 +2000,33 @@ button, input, select, textarea {
 }
 
 header {
-  padding-top: 1rem;
+  margin: 0 auto;
   z-index: 9999;
   height: 35px;
-  border-bottom: solid 1px #d9d9d9;
-  width: 86%;
-  max-width: 106rem;
-  margin: 0 auto;
+  margin-top: 0px;
+  width: 100%;
   background-color: transparent;
+  padding-top: 4.5rem;
 }
 
 @media only screen and (min-width: 38em) {
   header {
-    height: 2.35rem;
-    margin-top: 75px;
+    padding-top: 7rem;
   }
 }
 
 @media only screen and (min-width: 60em) {
   header {
-    height: 5rem;
-    margin-top: 100px;
+    padding-top: 11.25rem;
   }
+}
+
+header .max-width {
+  width: 86%;
+  border-bottom: solid 1px #d9d9d9;
+  position: relative;
+  margin: -1px auto 0;
+  max-width: 106rem;
 }
 
 header .small-logo {
@@ -2103,15 +2122,24 @@ header .nav-btn:visited {
 
 header .cta-btn-m,
 header .cta-btn-m:link,
-header .cta-btn-m:visited {
+header .cta-btn-m:visited,
+header .cta-btn-sm,
+header .cta-btn-sm:link,
+header .cta-btn-sm:visited {
   font-size: .6875rem;
   border-color: #c1836d;
+}
+
+header .cta-btn-sm,
+header .cta-btn-sm:link,
+header .cta-btn-sm:visited {
+  font-size: .6875rem;
+  color: #c1836d;
 }
 
 .nav a,
 .nav a:link,
 .nav a:visited {
-  font-size: .85rem;
   letter-spacing: 0.06em;
   font-weight: 700;
   -webkit-transition: all 300ms ease-in-out;
@@ -2125,6 +2153,32 @@ header .cta-btn-m:visited {
 .nav a:link:hover,
 .nav a:visited:hover {
   color: #c1836d;
+}
+
+.scroll-header {
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  background-color: white;
+  padding-top: 3.5rem;
+}
+
+@media only screen and (min-width: 38em) {
+  .scroll-header {
+    padding-top: 4rem;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .scroll-header {
+    padding-top: 6.5rem;
+  }
+}
+
+.scroll-header .max-width {
+  border-bottom: none;
 }
 
 #intro {
@@ -3112,16 +3166,17 @@ footer .copyright li {
   }
 }
 
-.facebook-i, .instagram.i {
+.facebook-i, .instagram-i {
   position: relative;
   display: inline-block;
+  padding-left: 1.5rem;
 }
 
-.facebook-i:after, .instagram.i:after {
+.facebook-i:after, .instagram-i:after {
   position: absolute;
   content: '';
-  height: 16px;
-  width: 16px;
+  height: 1rem;
+  width: 1rem;
   top: 0;
   left: 0;
   background-position: center center;
@@ -3129,11 +3184,11 @@ footer .copyright li {
   background-repeat: no-repeat;
 }
 
-.facebook-i {
+.facebook-i:after {
   background-image: url(/images/facebook-icon.png);
 }
 
-.instagram-i {
+.instagram-i:after {
   background-image: url(/images/instagram-icon.png);
 }
 
@@ -3151,4 +3206,21 @@ footer .copyright li {
   margin-top: 1.5rem;
   font-size: 0.5rem;
   color: #c1836d;
+}
+
+.nav-top a {
+  font-size: .85rem;
+}
+
+.nav-contact a {
+  font-size: .6875rem;
+  text-decoration: underline;
+}
+
+.nav-sm li:nth-child(2) a {
+  margin-left: .5rem;
+}
+
+.nav-sm li a {
+  text-transform: capitalize;
 }
