@@ -2499,7 +2499,9 @@ header .cta-btn-sm:visited {
   font-weight: 700;
   padding: .35rem 0;
   max-width: 22rem;
-  margin: 0 auto;
+  margin: -8px auto 0;
+  background-color: transparent;
+  text-transform: uppercase;
 }
 
 #services .flipper .back .sell-item {
@@ -3223,4 +3225,8 @@ footer .copyright li {
 
 .nav-sm li a {
   text-transform: capitalize;
+}
+
+.nav-contact-2 {
+  height: 2rem;
 }
