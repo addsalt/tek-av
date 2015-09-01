@@ -995,6 +995,7 @@ table {
   -webkit-transition: transform 800ms cubic-bezier(0.33, 0.28, 0.18, 0.99);
   transition: transform 800ms cubic-bezier(0.33, 0.28, 0.18, 0.99);
   transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
