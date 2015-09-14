@@ -1989,7 +1989,7 @@ button, input, select, textarea {
   transition: transform 0.25s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
-  position: absolute;
+  position: relative;
   top: 4px;
   left: 15px;
 }
