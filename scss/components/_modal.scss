@@ -190,14 +190,14 @@ input[type="submit"] {
     text-transform: uppercase;
     outline: none;
     &:hover {
-        color: $red;
+        color: $lightgrey;
     }
 }
 
 input[type="button"], .md-close, .md-content button {
     align-items: flex-start;
     text-align: center;
-    cursor: default;
+    cursor: pointer;
     color: buttontext;
     padding: 0;
     display: block;
@@ -212,6 +212,11 @@ input[type="button"], .md-close, .md-content button {
     text-transform: uppercase;
     text-decoration: underline;
     outline: none;
+    transition: all 200ms linear;
+    -webkit-transition: all 120ms linear;
+    &:hover {
+        color: $text;
+    }
 }
 
 

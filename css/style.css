@@ -1050,8 +1050,8 @@ table {
   background-color: #b4b4b4;
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
+  left: 5px;
+  right: 5px;
   bottom: 0;
   cursor: auto;
   -webkit-transform: rotateY(180deg);
@@ -1180,7 +1180,7 @@ table {
 }
 
 .contact-blurb a:hover, .copyright a:hover {
-  color: white;
+  color: #b4b4b4;
 }
 
 .hide-text {
@@ -1855,13 +1855,13 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  color: #c1836d;
+  color: #b4b4b4;
 }
 
 input[type="button"], .md-close, .md-content button {
   align-items: flex-start;
   text-align: center;
-  cursor: default;
+  cursor: pointer;
   color: buttontext;
   padding: 0;
   display: block;
@@ -1876,6 +1876,12 @@ input[type="button"], .md-close, .md-content button {
   text-transform: uppercase;
   text-decoration: underline;
   outline: none;
+  transition: all 200ms linear;
+  -webkit-transition: all 120ms linear;
+}
+
+input[type="button"]:hover, .md-close:hover, .md-content button:hover {
+  color: #4e4e4e;
 }
 
 .option-section {
@@ -2555,6 +2561,10 @@ header .cta-btn-sm:visited {
   text-transform: uppercase;
 }
 
+#services .flipper .back .custom-quote-btn:hover {
+  color: #4e4e4e;
+}
+
 #services .flipper .back .sell-item {
   list-style-type: none;
   border-top: 1px solid rgba(78, 78, 78, 0.25);
@@ -3061,7 +3071,7 @@ section.flip-layout aside.content .numbering {
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1.5;
-  margin: 2rem auto -1px;
+  margin: 2rem auto 3rem;
   padding: 2rem 0;
   z-index: 1;
   text-transform: none;
@@ -3212,10 +3222,6 @@ footer .copyright li {
 @media only screen and (min-width: 38em) {
   footer .copyright li {
     display: inline-block;
-  }
-  footer .copyright li:first-child {
-    border-right: solid 1px #b4b4b4;
-    padding-right: .5rem;
   }
 }
 

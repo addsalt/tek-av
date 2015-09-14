@@ -483,8 +483,8 @@ table {
     background-color: $lightgrey;
 	position: absolute;
 	top: 0;
-	left: 0;
-    right: 0;
+	left: 5px;
+    right: 5px;
     bottom: 0;
     cursor: auto;
      -webkit-transform: rotateY(180deg);
@@ -599,6 +599,6 @@ input.checkbox {
     -ms-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
     &:hover {
-        color: white;
+        color: $lightgrey;
     }
 }
