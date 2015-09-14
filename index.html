@@ -495,7 +495,7 @@
       method="POST">
                         
                         <span class="input input--yoshiko">
-                            <input class="input__field input__field--yoshiko" type="text" id="input-10" />
+                            <input class="input__field input__field--yoshiko" type="text" id="input-10" name="name" />
                             <label class="input__label input__label--yoshiko" for="input-10">
                                 <span class="input__label-content input__label-content--yoshiko" data-content="Your name">Your full name</span>
                             </label>
@@ -507,34 +507,35 @@
                             </label>
                         </span>
                         <span class="input input--yoshiko">
-                            <input class="input__field input__field--yoshiko" type="text" id="input-12" />
+                            <input class="input__field input__field--yoshiko" type="text" id="input-12" name="phone" />
                             <label class="input__label input__label--yoshiko" for="input-12">
                                 <span class="input__label-content input__label-content--yoshiko" data-content="Phone number">Your phone number</span>
                             </label>
                         </span>
                         <input type="text" name="_gotcha" style="display:none" />
+                        <input type="hidden" name="_next" value="http://www.justaddsalt.ca/tek-av" />
                         <div class="option-section">
                             <h4>I am interested in:</h4>
                             <span class="checkbox-input">
-                                <input type="checkbox" name="audio" value="Audio" class="checkbox" id="input-audio">
+                                <input type="checkbox" name="audio" value="Audio" class="checkbox" id="input-audio" name="interestedin_audio">
                                 <label for="input-audio" class="checkbox-label">Audio Installations</label>
                             </span>
                             <span class="checkbox-input">
-                                <input type="checkbox" name="audio" value="Audio" class="checkbox" id="input-video">
+                                <input type="checkbox" name="audio" value="Audio" class="checkbox" id="input-video" name="interestedin_video">
                                 <label for="input-video" class="checkbox-label">Video Installations</label>
                             </span>
                             <span class="checkbox-input">
-                                <input type="checkbox" name="networking" value="Network" class="checkbox" id="input-network">
+                                <input type="checkbox" name="networking" value="Network" class="checkbox" id="input-network" name="interestedin_network">
                                 <label for="input-network" class="checkbox-label">Network Installations</label>
                             </span>
 
                             <h4>I own:</h4>
                             <span class="checkbox-input">
-                                <input type="checkbox" name="residential" value="Residential" class="checkbox" id="input-residential">
+                                <input type="checkbox" name="residential" value="Residential" class="checkbox" id="input-residential" name="owns_residential">
                                 <label for="input-residential" class="checkbox-label">A residential building</label>
                             </span>
                             <span class="checkbox-input">
-                                <input type="checkbox" name="commercial" value="Commercial" class="checkbox" id="input-commercial">
+                                <input type="checkbox" name="commercial" value="Commercial" class="checkbox" id="input-commercial" name="owns_commercial">
                                 <label for="input-commercial" class="checkbox-label">A commercial building</label>
                             </span>
                         </div>
