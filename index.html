@@ -491,7 +491,8 @@
 			<div class="md-content">
 				<h3>Get a custom quote.</h3>
                 <section class="content">
-                    <form action="demo_form.asp" method="get">
+                    <form action="http://formspree.io/daniela@justaddsalt.ca"
+      method="POST">
                         
                         <span class="input input--yoshiko">
                             <input class="input__field input__field--yoshiko" type="text" id="input-10" />
@@ -500,7 +501,7 @@
                             </label>
                         </span>
                         <span class="input input--yoshiko">
-                            <input class="input__field input__field--yoshiko" type="text" id="input-11" />
+                            <input class="input__field input__field--yoshiko" type="email" id="input-11" name="_replyto" />
                             <label class="input__label input__label--yoshiko" for="input-11">
                                 <span class="input__label-content input__label-content--yoshiko" data-content="Your email">Your email address</span>
                             </label>
@@ -511,6 +512,7 @@
                                 <span class="input__label-content input__label-content--yoshiko" data-content="Phone number">Your phone number</span>
                             </label>
                         </span>
+                        <input type="text" name="_gotcha" style="display:none" />
                         <div class="option-section">
                             <h4>I am interested in:</h4>
                             <span class="checkbox-input">
