@@ -889,8 +889,15 @@ section aside.content div ul {
 .flipper {
   width: 95%;
   margin: 0;
+  margin-bottom: 1rem;
   position: relative;
   display: block;
+}
+
+@media only screen and (min-width: 60em) {
+  .flipper {
+    margin-bottom: 0;
+  }
 }
 
 .flipper .front-content {
@@ -936,7 +943,13 @@ section aside.content div ul {
 
 @media only screen and (min-width: 50em) {
   .flipper .flipper-content {
-    max-width: 40rem;
+    max-width: 25rem;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .flipper .flipper-content {
+    max-width: 35rem;
   }
 }
 
@@ -1272,14 +1285,13 @@ a.cta-btn-m {
 
 .small-logo {
   position: absolute;
-  top: -1.785rem;
   left: 2px;
-  width: 103px;
+  width: 80px;
 }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 38em) {
   .small-logo {
-    top: -3.785rem;
+    width: 103px;
   }
 }
 
@@ -2083,18 +2095,22 @@ header .max-width {
 
 header .small-logo {
   left: 0;
-  bottom: 1rem;
-  width: 100px;
+  bottom: 10px;
+  width: 70px;
+  top: -1.55rem;
 }
 
 @media only screen and (min-width: 38em) {
   header .small-logo {
-    bottom: 20px;
+    top: -1.95rem;
+    bottom: 8px;
+    width: 100px;
   }
 }
 
 @media only screen and (min-width: 60em) {
   header .small-logo {
+    top: -3.85rem;
     bottom: 41px;
   }
 }
@@ -2935,11 +2951,23 @@ header .cta-btn-sm:visited {
 
 #services .logos ul li {
   display: inline-block;
-  margin: 20px 26px;
+  margin: 15px 13px;
+}
+
+@media only screen and (min-width: 38em) {
+  #services .logos ul li {
+    margin: 20px 26px;
+  }
 }
 
 #services .logos ul li img {
-  height: 21px;
+  height: 13px;
+}
+
+@media only screen and (min-width: 38em) {
+  #services .logos ul li img {
+    height: 21px;
+  }
 }
 
 #our-work {

@@ -46,12 +46,16 @@ header {
     }
     .small-logo {
         left: 0;
-        bottom: 1rem;
-        width: 100px;
+        bottom: 10px;
+        width: 70px;
+        top: -1.55rem;
         @media #{$media-m} {
-            bottom: 20px;
+            top: -1.95rem;
+            bottom: 8px;
+            width: 100px;
         }
         @media #{$media-l} {
+            top: -3.85rem;
             bottom: 41px;
         }
     }
@@ -707,9 +711,15 @@ header {
             margin: 3rem auto 0;
             li {
                 display: inline-block;
-                margin: 20px 26px;
+                margin: 15px 13px;
+                @media #{$media-m} {
+                    margin: 20px 26px;
+                }
                 img {
-                    height: 21px;
+                    height: 13px;
+                    @media #{$media-m} {
+                        height: 21px;
+                    }
                 }
             }
         }

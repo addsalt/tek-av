@@ -79,11 +79,10 @@ a.cta-btn-m {
 
 .small-logo {
     position: absolute;
-    top: -1.785rem;
     left: 2px;
-    width: 103px;
-    @media #{$media-l} {
-        top: -3.785rem;
+    width: 80px;
+    @media #{$media-m} {
+        width: 103px;
     }
 }
 
